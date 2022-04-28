@@ -6,9 +6,7 @@ import userData from "@constants/data";
 export default function LatestCode({ repositories }) {
   const [repos, setRepos] = useState([]);
 
-  useEffect(async () => {
-    // let latestRepos = await getLatestRepos(userData);
-    // console.log("latestRepos", latestRepos);
+  useEffect(() => {
     setRepos(repositories);
   }, []);
   return (
@@ -47,7 +45,7 @@ export default function LatestCode({ repositories }) {
 
         {repos &&
           repos.map((latestRepo, idx) => (
-            <GithubRepoCard latestRepo={latestRepo} key="idx" />
+            <GithubRepoCard latestRepo={latestRepo} key={idx} />
           ))}
       </div>
     </section>

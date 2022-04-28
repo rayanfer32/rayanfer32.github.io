@@ -37,6 +37,7 @@ export default function FavouriteProjects() {
           {userData.projects.slice(0,3).map((project, index) => {
             return (
               <a
+                key={project.title}
                 href="https://tailwindmasterkit.com"
                 className="w-full block col-span-3 shadow-2xl"
               >
