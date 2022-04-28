@@ -1,5 +1,6 @@
 import React from "react";
 import userData from "@constants/data";
+import { getMyTechStackIcons } from "@utils/helper";
 
 export default function AboutMe() {
   return (
@@ -143,7 +144,7 @@ export default function AboutMe() {
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              {userData.about.techStackIcons.map((src, idx) => (
+              {getMyTechStackIcons().map((src, idx) => (
                 <img src={src} className="h-20 w-20 mx-4 my-4" />
               ))}
             </div>
