@@ -38,7 +38,7 @@ export default function FavouriteProjects() {
             return (
               <a
                 key={project.title}
-                href="https://tailwindmasterkit.com"
+                href={project.link}
                 className="w-full block col-span-3 shadow-2xl"
               >
                 <div className="relative overflow-hidden">
