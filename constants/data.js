@@ -8,6 +8,7 @@ const userData = {
   phone: "+91 8722277308",
   address: "Mangalore, Karnataka, India.",
   domainURL: "https://rayanfer32.github.io",
+  credits: "manuarora.in",
   traits: [
     ["Coder", "#F59E0B"],
     ["Designer", "#84CC16"],
@@ -16,24 +17,28 @@ const userData = {
   ],
   projects: [
     {
-      title: "Nexus Explorer Next",
+      title: "Nexus Explorer V2",
       link: "https://explorer.nexus.io",
       imgUrl: "/nexus_explorer.jpg",
+      desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
     },
     {
       title: "Demuxx Bot",
       link: "https://t.me/demuxxbot",
       imgUrl: "/demuxx.png",
+      desc: "A Telegram bot for audio source seperation the using spleeter lib.",
     },
     {
       title: "Tgindex Pro",
       link: "https://github.com/rayanfer32/TgindexPro",
       imgUrl: "/tgindex.jpg",
+      desc: "File Streaming Index for Telegram Channels and Groups.",
     },
     {
       title: "Dicto-Writer",
       link: "https://github.com/hackerminds/DictoWriter",
       imgUrl: "/dicto_writer.jpg",
+      desc: "Speech writing plotter machine which writes dictated text (for the diffrently abled).",
     },
     // {
     //     title: "Greentech - Greenhouse Automation",
@@ -44,7 +49,7 @@ const userData = {
   meta: {
     title: "Rayan Fernandes - Coder. Designer. Freelancer",
     description: `Building things gets me excited. Get in touch with me to know more.`,
-    image: "/avatar.png",
+    image: "/profile_pic.png",
     type: "website",
   },
   about: {
