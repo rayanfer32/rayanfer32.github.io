@@ -17,7 +17,6 @@ const userData = {
     "html",
     "css",
     "java",
-    "vue",
     "git",
     "nodejs",
     "kotlin",
@@ -31,6 +30,7 @@ const userData = {
     "mongodb",
     "flutter",
     "dart",
+    "visual-studio-code",
   ],
   traits: [
     ["Coder", "#F59E0B"],
