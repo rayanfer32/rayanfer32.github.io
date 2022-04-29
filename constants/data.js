@@ -17,16 +17,16 @@ const userData = {
   ],
   projects: [
     {
-      title: "Nexus Explorer Next",
+      title: "Nexus Explorer V2",
       link: "https://explorer.nexus.io",
       imgUrl: "/nexus_explorer.jpg",
-      desc: "A web-based blockchain explorer for the Nexus blockchain.",
+      desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
     },
     {
       title: "Demuxx Bot",
       link: "https://t.me/demuxxbot",
       imgUrl: "/demuxx.png",
-      desc: "A Telegram bot for the using spleeter lib for audio source seperation.",
+      desc: "A Telegram bot for audio source seperation the using spleeter lib.",
     },
     {
       title: "Tgindex Pro",
@@ -49,7 +49,7 @@ const userData = {
   meta: {
     title: "Rayan Fernandes - Coder. Designer. Freelancer",
     description: `Building things gets me excited. Get in touch with me to know more.`,
-    image: "/avatar.png",
+    image: "/profile_pic.png",
     type: "website",
   },
   about: {
