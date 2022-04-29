@@ -8,6 +8,7 @@ const userData = {
   phone: "+91 8722277308",
   address: "Mangalore, Karnataka, India.",
   domainURL: "https://rayanfer32.github.io",
+  credits: "manuarora.in",
   traits: [
     ["Coder", "#F59E0B"],
     ["Designer", "#84CC16"],
@@ -19,21 +20,25 @@ const userData = {
       title: "Nexus Explorer Next",
       link: "https://explorer.nexus.io",
       imgUrl: "/nexus_explorer.jpg",
+      desc: "A web-based blockchain explorer for the Nexus blockchain.",
     },
     {
       title: "Demuxx Bot",
       link: "https://t.me/demuxxbot",
       imgUrl: "/demuxx.png",
+      desc: "A Telegram bot for the using spleeter lib for audio source seperation.",
     },
     {
       title: "Tgindex Pro",
       link: "https://github.com/rayanfer32/TgindexPro",
       imgUrl: "/tgindex.jpg",
+      desc: "File Streaming Index for Telegram Channels and Groups.",
     },
     {
       title: "Dicto-Writer",
       link: "https://github.com/hackerminds/DictoWriter",
       imgUrl: "/dicto_writer.jpg",
+      desc: "Speech writing plotter machine which writes dictated text (for the diffrently abled).",
     },
     // {
     //     title: "Greentech - Greenhouse Automation",

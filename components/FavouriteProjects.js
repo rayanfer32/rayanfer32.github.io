@@ -34,7 +34,7 @@ export default function FavouriteProjects() {
 
         {/* Grid starts here */}
         <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
-          {userData.projects.slice(0,3).map((project, index) => {
+          {userData.projects.slice(0, 3).map((project, index) => {
             return (
               <a
                 key={project.title}
@@ -52,6 +52,9 @@ export default function FavouriteProjects() {
                   </h1>
                   <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                     {index + 1}
+                  </h1>
+                  <h1 className="absolute bottom-10 right-10 bg-white text-blue-500 rounded px-4 font-bold text-xl">
+                    {project.desc}
                   </h1>
                 </div>
               </a>
