@@ -7,3 +7,9 @@ function getTopicIcon(item) {
 export function getMyTechStackIcons() {
   return userData.techStack.map((item) => getTopicIcon(item));
 }
+
+
+export function sendTelegramMessage(message) {
+  const url = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${process.env.TELEGRAM_CHAT_ID}&text=${message}`;
+  return fetch(url)
+}

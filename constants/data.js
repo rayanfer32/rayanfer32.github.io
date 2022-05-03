@@ -77,6 +77,7 @@ const userData = {
     },
   ],
   meta: {
+    site_name: "Rayan Fernandes",
     title: "Rayan Fernandes - Coder. Designer. Freelancer",
     description: `Building things gets me excited. Get in touch with me to know more.`,
     image: "/profile_pic.png",

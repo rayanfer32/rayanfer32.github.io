@@ -5,6 +5,23 @@ import { BsEnvelopeFill, BsPhone, BsPinMapFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
 export default function Contact() {
+  function handleOnSubmit(e) {
+    e.preventDefault();
+
+    const kvpairs = [];
+    const form = e.target;
+    for (var i = 0; i < form.elements.length; i++) {
+      const e = form.elements[i];
+      kvpairs.push(encodeURIComponent(e.value));
+    }
+    var message = kvpairs.join("  |  ");
+
+    fetch("/api/contact", {
+      method: "POST",
+      body: message,
+    });
+  }
+
   return (
     <IconContext.Provider
       value={{ color: "blue", className: "global-class-name" }}
@@ -67,7 +84,10 @@ export default function Contact() {
                 </a>
               </div>
             </div>
-            <form className="form rounded-lg bg-white p-4 flex flex-col">
+            <form
+              onSubmit={handleOnSubmit}
+              className="form rounded-lg bg-white p-4 flex flex-col"
+            >
               <label htmlFor="name" className="text-sm text-gray-600 mx-4">
                 {" "}
                 Your Name
