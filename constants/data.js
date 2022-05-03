@@ -48,8 +48,20 @@ const userData = {
     {
       title: "Demuxx Bot",
       link: "https://t.me/demuxxbot",
-      imgUrl: "/demuxx.png",
+      imgUrl: "/demuxx.jpg",
       desc: "A Telegram bot for audio source seperation the using spleeter lib.",
+    },
+    {
+      title: "DoodStream Bot",
+      link: "https://t.me/doodstreambot",
+      imgUrl: "/doodstream.jpg",
+      desc: "A bot to mirror telegram video files to doodstream.",
+    },
+    {
+      title: "Internet Monitoring Bot",
+      link: "https://t.me/rrnetpibot",
+      imgUrl: "/internetbot.jpg",
+      desc: "A bot that keeps an eye out on the internet stats (for distrubutors).",
     },
     {
       title: "Tgindex Pro",
