@@ -41,7 +41,7 @@ export default function Navbar() {
 
         <div className="space-x-8 hidden md:block">
           {navbarLinks.map(({ title, path }, index) => (
-            <Link href={path}>
+            <Link key={title} href={path}>
               <a
                 className={`text-base ${
                   router.asPath === path
@@ -154,7 +154,7 @@ export default function Navbar() {
       {/* mobile navbar */}
       <div className="space-x-3 block md:hidden mt-4">
         {navbarLinks.map(({ title, path }, index) => (
-          <Link href={path}>
+          <Link key={title} href={path}>
             <a className="text-base font-normal text-gray-600 dark:text-gray-300">
               {title}
             </a>
