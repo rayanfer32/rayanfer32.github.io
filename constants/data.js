@@ -130,7 +130,7 @@ const userData = {
       desc: "Subjects being Physics, Chemistry, Mathematics, English, Hindi and the most important Computer Science!",
     },
   ],
-  resumeUrl: "https://github.com/rayanfer32/Resume/blob/master/Resume8.5.pdf",
+  resumeUrl: "https://github.com/rayanfer32/Resume/blob/master/resume.pdf",
   socialLinks: {
     instagram: "https://instagram.com/rayanfer32_",
     twitter: "https://twitter.com/rayanfernandes9",
