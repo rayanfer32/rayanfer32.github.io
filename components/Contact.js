@@ -25,7 +25,7 @@ export default function Contact() {
   return (
     <IconContext.Provider
       value={{
-        className: "text-blue-600 dark:text-emerald-500",
+        className: "text-blue-600 dark:text-blue-500",
       }}
     >
       <section>
@@ -34,11 +34,13 @@ export default function Contact() {
             Contact
           </h1>
         </div>
-        <div className="relative rounded-md shadow-md bg-blue-200 text-black dark:bg-emerald-700 dark:text-white p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 mt-2">
+        <div className="relative rounded-md shadow-md bg-blue-100 text-black dark:bg-blue-900 dark:text-white p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 mt-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            {/* //! hidden form as the netlify cloud functions are slow */}
             <form
               onSubmit={handleOnSubmit}
-              className="form rounded-lg bg-white text-gray-600 dark:bg-emerald-900 dark:text-white  p-4 flex flex-col"
+              className="hidden form rounded-lg bg-white text-gray-600 dark:bg-blue-900 dark:text-white  p-4 flex flex-col"
             >
               <label htmlFor="name" className="text-sm mx-4">
                 Your Name
@@ -98,7 +100,7 @@ export default function Contact() {
                   <p className="font-light text-sm">{userData.address}</p>
                 </div>
               </div>
-              <div className="social-icons flex flex-row justify-around dark:bg-emerald-900 shadow-md rounded-full space-x-8">
+              <div className="social-icons flex flex-row justify-around dark:bg-blue-900 shadow-md rounded-full space-x-8">
                 <a
                   href={userData.socialLinks.facebook}
                   className="h-10 w-10 hover:bg-white rounded-full  flex items-center justify-center cursor-pointer"
