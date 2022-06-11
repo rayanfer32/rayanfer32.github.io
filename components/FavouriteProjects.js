@@ -54,7 +54,7 @@ export default function FavouriteProjects() {
                   <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                     {index + 1}
                   </h1>
-                  <h1 className="absolute bottom-10 right-10 bg-white text-zinc-800 rounded p-4  text-xl shadow-md">
+                  <h1 className="absolute bottom-10 right-10 bg-white text-zinc-800 rounded ml-2 sm:p-1 sm:text-lg md:p-2 md:text-xl shadow-md">
                     {project.desc}
                   </h1>
                 </div>

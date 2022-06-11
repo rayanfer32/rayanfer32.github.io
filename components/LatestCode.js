@@ -40,7 +40,7 @@ export default function LatestCode({ repositories }) {
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-10">
         {/* Single github Repo */}
 
         {repos &&
@@ -54,7 +54,7 @@ export default function LatestCode({ repositories }) {
 
 const GithubRepoCard = ({ latestRepo }) => {
   return (
-    <div className="github-repo border-2 border-emerald-200 rounded p-4 shadow-emerald-200 shadow-xl">
+    <div className="github-repo border-2 border-emerald-200 rounded p-2 shadow-emerald-400 shadow-md">
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
         {latestRepo.name}
       </h1>
