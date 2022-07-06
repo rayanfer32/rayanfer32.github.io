@@ -90,8 +90,8 @@ const userData = {
       `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
       `I've been coding in Python, React, Node.js, Express, MySQL, Bootstrap, .NET, C, C++, C#, Java, Assembly language etc to name a few. Although I barely remember the syntax of all the languages now though, I consider myself a Ninja developer.`,
     ],
-    currentProject: "Nexus Explorer",
-    currentProjectUrl: "https://explorer.nexus.io",
+    currentProject: "Nexus Market Cap",
+    currentProjectUrl: "https://nexus-market-cap.vercel.app/",
   },
   experience: [
     {
@@ -130,7 +130,7 @@ const userData = {
       desc: "Subjects being Physics, Chemistry, Mathematics, English, Hindi and the most important Computer Science!",
     },
   ],
-  resumeUrl: "https://github.com/rayanfer32/Resume/blob/master/resume.pdf",
+  resumeUrl: "/resume",
   socialLinks: {
     instagram: "https://instagram.com/rayanfer32_",
     twitter: "https://twitter.com/rayanfernandes9",
