@@ -5,7 +5,7 @@ import { Document, Page, pdfjs } from 'react-pdf/dist/esm/entry.webpack';
 // import pdf worker as a url, see `next.config.js` and `pdf-worker.js`
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-export default function PDFViewer({file}) {
+export default function PDFViewer({file, width, height}) {
   const [numPages, setNumPages] = useState(null);
   
 
@@ -21,7 +21,9 @@ export default function PDFViewer({file}) {
             <Page
               key={`page_${index + 1}`}
               pageNumber={index + 1}
-              scale={1.5}
+              scale={1}
+              width={width}
+              height={height}
               renderAnnotationLayer={false}
               renderTextLayer={true}
               />
