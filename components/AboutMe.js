@@ -1,6 +1,7 @@
 import React from "react";
 import userData from "@constants/data";
 import { getMyTechStackIcons } from "@utils/helper";
+import Link from "next/link";
 
 export default function AboutMe() {
   return (
@@ -52,13 +53,11 @@ export default function AboutMe() {
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 I'm looking for a job currently, If you see me as a good fit,
                 check my{" "}
-                <a
-                  href={userData.resumeUrl}
-                  target="__blank"
-                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
-                >
-                  CV
-                </a>{" "}
+                <Link href={userData.resumeUrl}>
+                  <a className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">
+                    CV{" "}
+                  </a>
+                </Link>
                 and I'd love to work for you.
               </p>
             </div>

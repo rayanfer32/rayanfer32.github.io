@@ -17,6 +17,7 @@ export default function Navbar() {
     { title: "Home", path: "/" },
     { title: "About", path: "/about" },
     { title: "Projects", path: "/projects" },
+    { title: "Resume", path: "/resume" },
     { title: "Experience", path: "/experience" },
     { title: "Contact", path: "/contact" },
   ];
@@ -152,7 +153,7 @@ export default function Navbar() {
       </div>
 
       {/* mobile navbar */}
-      <div className="space-x-3 block md:hidden mt-4">
+      <div className="space-x-3 flex flex-wrap justify-center md:hidden mt-4">
         {navbarLinks.map(({ title, path }, index) => (
           <Link key={title} href={path}>
             <a className="text-base font-normal text-gray-600 dark:text-gray-300">
