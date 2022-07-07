@@ -23,11 +23,12 @@ export default function Contact() {
   }
 
   return (
-    <IconContext.Provider
-      value={{
-        className: "text-blue-600 dark:text-blue-500",
-      }}
-    >
+    // <IconContext.Provider
+    //   value={{
+    //     className: "text-blue-600 dark:text-blue-500",
+    //   }}
+    // >
+    <>
       <section>
         <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
           <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
@@ -36,7 +37,6 @@ export default function Contact() {
         </div>
         <div className="relative rounded-md shadow-md bg-blue-100 text-black dark:bg-blue-900 dark:text-white p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 mt-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            
             {/* //! hidden form as the netlify cloud functions are slow */}
             <form
               onSubmit={handleOnSubmit}
@@ -58,10 +58,7 @@ export default function Contact() {
                 className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                 name="email"
               />
-              <label
-                htmlFor="message"
-                className="text-sm mx-4 mt-4"
-              >
+              <label htmlFor="message" className="text-sm mx-4 mt-4">
                 Message
               </label>
               <textarea
@@ -124,6 +121,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </IconContext.Provider>
+      {/* </IconContext.Provider> */}
+    </>
   );
 }

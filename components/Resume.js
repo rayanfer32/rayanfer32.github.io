@@ -21,7 +21,7 @@ export default function Resume() {
   return (
     // ! use lg breakpoint as mobile view layout overflows with justify-center
     <ContainerBlock>
-      <div className="overflow-auto flex justify-center">
+      <div className="overflow-auto flex justify-center min-h-screen">
         <PDFViewer
           width={
             windowSize.width > 500 ? windowSize.width - windowSize.width/5 : windowSize.width
