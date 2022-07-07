@@ -95,18 +95,18 @@ const userData = {
   },
   experience: [
     {
-      title: "Full Stack Developer",
-      company: "Nexus.io",
-      year: "2022",
-      companyLink: "https://explorer.nexus.io",
-      desc: "Developed The Nexus Explorer using next.js and python, with figma design tool.",
-    },
-    {
-      title: "Software Developer",
+      title: "Systems Engineer",
       company: "Infosys",
-      year: "2021",
+      year: "2021-2022",
       companyLink: "https://infosys.com",
       desc: "Systems Engineer, dealing with some of the biggest projects in the industry.",
+    },
+    {
+      title: "Full Stack Developer",
+      company: "Nexus.io",
+      year: "2020-2021",
+      companyLink: "https://explorer.nexus.io",
+      desc: "Developed The Nexus Explorer using next.js and python, with figma design tool.",
     },
     {
       title: "Internship",
@@ -118,7 +118,7 @@ const userData = {
     {
       title: "Electronics & Communication Engineering",
       company: "Canara Engineering College",
-      year: "2016-2021",
+      year: "2016-2020",
       companyLink: "https://canaraengineering.com",
       desc: "Had a tough time in the electronics and communication engineering department, but I managed to get a 6.7 CGPA.",
     },

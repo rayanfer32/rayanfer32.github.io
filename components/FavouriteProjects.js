@@ -41,7 +41,7 @@ export default function FavouriteProjects() {
                 href={project.link}
                 className="w-full block col-span-3 shadow-2xl"
               >
-                <h1 className="text-gray-100 text-2xl bg-zinc-800 p-6">
+                <h1 className="text-gray-100 text-xl bg-zinc-800 p-4">
                   {project.title}
                 </h1>
                 <div className="relative overflow-hidden">
@@ -54,7 +54,7 @@ export default function FavouriteProjects() {
                   <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                     {index + 1}
                   </h1>
-                  <h1 className="absolute bottom-10 right-10 bg-white text-zinc-800 rounded ml-2 sm:p-1 sm:text-lg md:p-2 md:text-xl shadow-md">
+                  <h1 className="absolute backdrop-blur-sm w-full bg-black/40 bottom-0 lg:text-xl flex lg:h-20 justify-center items-center text-white rounded text-center shadow-md">
                     {project.desc}
                   </h1>
                 </div>
