@@ -13,7 +13,7 @@ export default function Experience() {
         <div className="grid grid-cols-1 dark:bg-gray-900 max-w-xl mx-auto pt-20">
           {/* Experience card */}
           {userData.experience.map((exp, idx) => (
-            <>
+            <React.Fragment key={exp.title}>
               <ExperienceCard
                 key={idx}
                 title={exp.title}
@@ -30,7 +30,7 @@ export default function Experience() {
                   <div className="w-1 h-24 bg-gray-200 dark:bg-gray-500 rounded-full -mt-2"></div>
                 </div>
               )}
-            </>
+            </React.Fragment>
           ))}
         </div>
       </div>

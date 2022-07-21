@@ -131,6 +131,7 @@ const userData = {
     },
   ],
   resumeUrl: "/resume",
+  resumeDownloadUrl: "https://min.gitcdn.link/cdn/rayanfer32/Resume/master/resume.pdf",
   socialLinks: {
     instagram: "https://instagram.com/rayanfer32_",
     twitter: "https://twitter.com/rayanfernandes9",
