@@ -10,19 +10,7 @@ export default function Footer() {
           <div>
             <p>&copy; {userData.name}. All Rights Reserved.</p>
           </div>
-          <div>
-            <div>
-              Developed by
-              <div className="inline-block transform hover:scale-110 hover:-rotate-3 transition duration-300">
-                <a
-                  className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50"
-                  href={`https://${userData.credits}`}
-                >
-                  {userData.credits}
-                </a>
-              </div>
-            </div>
-          </div>
+          <div></div>
           <div className="space-x-4 flex flex-row items-center">
             <a
               href={userData.socialLinks.instagram}
