@@ -8,7 +8,7 @@ const userData = {
   phone: "+91 8722277308",
   address: "Mangalore, Karnataka, India.",
   domainURL: "https://rayanfer32.github.io",
-  credits: "manuarora.in",
+  credits: "rayanfer32.netlify.com",
   techStack: [
     "react",
     "javascript",

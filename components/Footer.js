@@ -18,7 +18,7 @@ export default function Footer() {
                   className="hover:bg-red-500 rounded-md px-2 py-1  hover:text-gray-50"
                   href={`https://${userData.credits}`}
                 >
-                  {userData.credits} + me
+                  {userData.credits}
                 </a>
               </div>
             </div>
