@@ -51,11 +51,11 @@ export default function FavouriteProjects() {
                     className="transform hover:scale-125 transition duration-2000 ease-out"
                   />
 
-                  <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                    {index + 1}
-                  </h1>
                   <h1 className="absolute backdrop-blur-sm w-full bg-black/40 bottom-0 lg:text-xl flex lg:h-20 justify-center items-center text-white rounded text-center shadow-md">
                     {project.desc}
+                  </h1>
+                  <h1 className="absolute bottom-6 left-10 text-gray-50 font-bold text-xl">
+                    {index + 1}
                   </h1>
                 </div>
               </a>

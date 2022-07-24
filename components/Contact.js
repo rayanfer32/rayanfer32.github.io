@@ -100,19 +100,19 @@ export default function Contact() {
               <div className="social-icons flex flex-row justify-around dark:bg-blue-900 shadow-md rounded-full space-x-8">
                 <a
                   href={userData.socialLinks.facebook}
-                  className="h-10 w-10 hover:bg-white rounded-full  flex items-center justify-center cursor-pointer"
+                  className="h-10 w-10 rounded-full hover:bg-blue-400  flex items-center justify-center cursor-pointer"
                 >
                   <FiFacebook />
                 </a>
                 <a
                   href={userData.socialLinks.twitter}
-                  className="h-10 w-10 hover:bg-white rounded-full  flex items-center justify-center cursor-pointer"
+                  className="h-10 w-10 hover:bg-blue-400 rounded-full  flex items-center justify-center cursor-pointer"
                 >
                   <FiTwitter />
                 </a>
                 <a
                   href={userData.socialLinks.instagram}
-                  className="h-10 w-10 hover:bg-white rounded-full  flex items-center justify-center cursor-pointer"
+                  className="h-10 w-10 hover:bg-blue-400 rounded-full  flex items-center justify-center cursor-pointer"
                 >
                   <FiInstagram />
                 </a>

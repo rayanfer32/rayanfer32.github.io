@@ -2,7 +2,7 @@ const userData = {
   githubUsername: "rayanfer32",
   name: "Rayan Fernandes",
   description: "Developer, Designer, and Freelancer",
-  designation: "Full-Stack Developer",
+  designation: "React Full-Stack Developer",
   avatarUrl: "/profile_pic.png",
   email: "rayanfernandes9@gmail.com",
   phone: "+91 8722277308",
@@ -40,7 +40,7 @@ const userData = {
   ],
   projects: [
     {
-      title: "Nexus Explorer V2",
+      title: "Nexus Explorer",
       link: "https://explorer.nexus.io",
       imgUrl: "/nexus_explorer.jpg",
       desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
