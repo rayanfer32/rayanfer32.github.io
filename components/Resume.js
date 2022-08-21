@@ -52,7 +52,7 @@ export default function Resume() {
               ? windowSize.width - windowSize.width / 5
               : windowSize.width
           }
-          file="https://min.gitcdn.link/cdn/rayanfer32/Resume/master/resume.pdf"
+          file={userData.resumeDownloadUrl}
         />
       </div>
     </ContainerBlock>
