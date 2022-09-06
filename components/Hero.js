@@ -12,7 +12,7 @@ export default function Hero() {
         <RoughNotationGroup show={true}>
           {userData.traits.map(([trait, color], index) => (
             <RainbowHighlight key={trait} color={color}>
-              <h1 className="text-4xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              <h1 className="text-3xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
                 {trait}
               </h1>
             </RainbowHighlight>

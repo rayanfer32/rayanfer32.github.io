@@ -95,6 +95,13 @@ const userData = {
   },
   experience: [
     {
+      title: "Cloud Associate",
+      company: "Niveus Solutions",
+      year: "2022-2023",
+      companyLink: "https://niveussolutions.com",
+      desc: "I really like it here.",
+    },
+    {
       title: "Systems Engineer",
       company: "Infosys",
       year: "2021-2022",
@@ -115,6 +122,8 @@ const userData = {
       companyLink: "https://fiabilite.com",
       desc: "Worked on Embedded IOT and Applications development.",
     },
+  ],
+  education: [
     {
       title: "Electronics & Communication Engineering",
       company: "Canara Engineering College",
@@ -127,6 +136,13 @@ const userData = {
       company: "Padua P.U College, Nanthoor",
       year: "2014 - 2016",
       companyLink: "https://paduapucollege.org",
+      desc: "Subjects being Physics, Chemistry, Mathematics, English, Hindi and the most important Computer Science!",
+    },
+    {
+      title: "Primary & High School",
+      company: "Navachethana English Medium School, Neermarga",
+      year: "2004 - 2014",
+      companyLink: "https://navachetana.org",
       desc: "Subjects being Physics, Chemistry, Mathematics, English, Hindi and the most important Computer Science!",
     },
   ],
