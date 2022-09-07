@@ -143,7 +143,7 @@ const userData = {
       company: "Navachethana English Medium School, Neermarga",
       year: "2004 - 2014",
       companyLink: "https://navachetana.org",
-      desc: "Subjects being Physics, Chemistry, Mathematics, English, Hindi and the most important Computer Science!",
+      desc: "Basic schooling everyone makes it through.",
     },
   ],
   resumeUrl: "/resume",

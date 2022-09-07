@@ -11,7 +11,7 @@ export default function Experience() {
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <CreateCards data={userData.experience} pingColor="green" />
-        <div className="max-w-6xl mx-auto h-20 dark:bg-gray-800">
+        <div className="max-w-6xl mx-auto h-20">
           <h1 className=" text-3xl md:text-5xl font-bold py-10 text-center md:text-left">
             Education
           </h1>
