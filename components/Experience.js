@@ -45,7 +45,7 @@ function CreateCards({ data, pingColor }) {
                 className={`w-4 h-4 bg-${pingColor}-500 rounded-full relative z-10`}
               >
                 <div
-                  className={`w-4 h-4 bg-${pingColor}-500 rounded-full relative z-10 animate-ping`}
+                  className={`w-4 h-4 animate-ping bg-${pingColor}-500 rounded-full relative z-10 `}
                 ></div>
               </div>
               <div className="w-1 h-24 bg-gray-200 dark:bg-gray-500 rounded-full -mt-2"></div>

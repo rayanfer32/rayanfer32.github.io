@@ -2,6 +2,8 @@ import { useState } from "react";
 // import default react-pdf entry
 import { Document, Page, pdfjs } from "react-pdf";
 import { ImSpinner2 } from "react-icons/im";
+import 'react-pdf/dist/cjs/Page/AnnotationLayer.css'; 
+import 'react-pdf/dist/cjs/Page/TextLayer.css';
 
 // import pdf worker as a url, see `next.config.js` and `pdf-worker.js`
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
