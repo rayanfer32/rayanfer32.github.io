@@ -6,6 +6,9 @@ import LatestCode from "../components/LatestCode";
 import Hero from "../components/Hero";
 import getLatestRepos from "@lib/getLatestRepos";
 import userData from "@constants/data";
+import AboutMe from "@components/AboutMe";
+import Experience from "@components/Experience";
+import Contact from "@components/Contact";
 
 export default function Home({ repositories }) {
   return (
@@ -15,7 +18,10 @@ export default function Home({ repositories }) {
     >
       <Hero />
       <FavouriteProjects />
+      <AboutMe/>
+      <Experience showEducation={false}/>
       <LatestCode repositories={repositories} />
+      <Contact/>
     </ContainerBlock>
   );
 }

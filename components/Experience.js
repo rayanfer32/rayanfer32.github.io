@@ -1,9 +1,9 @@
 import userData from "@constants/data";
 import React from "react";
 
-export default function Experience() {
+export default function Experience({ showEducation = true }) {
   return (
-    <section className="bg-white dark:bg-gray-800">
+    <section className="bg-white dark:bg-gray-800 mb-4">
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           Experience
@@ -11,12 +11,16 @@ export default function Experience() {
       </div>
       <div className="bg-[#F1F1F1] dark:bg-gray-900 -mt-4">
         <CreateCards data={userData.experience} pingColor="green" />
-        <div className="max-w-6xl mx-auto h-20">
-          <h1 className=" text-3xl md:text-5xl font-bold py-10 text-center md:text-left">
-            Education
-          </h1>
-        </div>
-        <CreateCards data={userData.education} pingColor="blue" />
+        {showEducation && (
+          <>
+            <div className="max-w-6xl mx-auto h-20">
+              <h1 className=" text-3xl md:text-5xl font-bold py-10 text-center md:text-left">
+                Education
+              </h1>
+            </div>
+            <CreateCards data={userData.education} pingColor="blue" />
+          </>
+        )}
       </div>
     </section>
   );

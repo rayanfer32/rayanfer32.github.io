@@ -2,6 +2,8 @@ import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import ContainerBlock from "./ContainerBlock";
 import userData from "@constants/data";
+import "react-pdf/dist/cjs/Page/AnnotationLayer.css";
+import "react-pdf/dist/cjs/Page/TextLayer.css";
 
 const PDFViewer = dynamic(() => import("./molecules/PDFViewer"), {
   ssr: false,
