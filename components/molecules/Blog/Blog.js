@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ImSpinner2 } from "react-icons/im";
-import { blogData } from "./blogdata";
 
 function Loader() {
   return (
@@ -21,24 +20,16 @@ export default function Blog() {
   const blankDivRef = useRef();
 
   useEffect(() => {
-    return
-    // try {
-    //   iframeRef?.current?.querySelector(".tgme_header_right_column").style?.display = "none"
-    // }
-    // catch (err) {
+    if (iframeRef.current) {
+      setIsLoading(true);
+      document.body.style.overflow = "hidden";
+    }
 
-    // }
-    console.log(iframeRef.current);
-    document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "";
+      setIsLoading(false);
     };
-  }, [isLoading]);
-
-
-  useEffect(() => {
-    // blankDivRef.current.innerHTML = blogData
-  }, [])
+  }, []);
 
   return (
     <div
@@ -52,11 +43,13 @@ export default function Blog() {
       }}
     >
       {isLoading && <Loader />}
-     
+
       <div className="overflow-auto" ref={blankDivRef}></div>
-     
+
       <iframe
-        onLoad={() => setIsLoading(false)}
+        onLoad={() => {
+          setIsLoading(false);
+        }}
         ref={iframeRef}
         width="100%"
         height="100%"
