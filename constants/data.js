@@ -46,6 +46,12 @@ const userData = {
       desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
     },
     {
+      title: "Nexus Alerts Bot",
+      link: "https://t.me/nexusalerts",
+      imgUrl: "/nexus-alerts.jpg",
+      desc: "Realtime alert bot shows high value transactions on Nexus.",
+    },
+    {
       title: "Demuxx Bot",
       link: "https://t.me/demuxxbot",
       imgUrl: "/demuxx.jpg",
