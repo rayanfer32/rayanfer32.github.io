@@ -19,7 +19,15 @@ export default function Contact() {
     fetch("/api/contact", {
       method: "POST",
       body: message,
-    });
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data.reply);
+        alert(data.message);
+      })
+      .catch((err) => {
+        alert("Failed to send.");
+      });
   }
 
   return (
