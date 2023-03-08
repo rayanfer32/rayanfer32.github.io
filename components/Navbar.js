@@ -15,6 +15,7 @@ export default function Navbar() {
 
   const navbarLinks = [
     { title: "Home", path: "/" },
+    { title: "Blog", path: "/blog" },
     { title: "About", path: "/about" },
     { title: "Projects", path: "/projects" },
     { title: "Resume", path: "/resume" },
