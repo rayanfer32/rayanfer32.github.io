@@ -37,10 +37,9 @@ export default function Contact() {
         </div>
         <div className="relative rounded-md shadow-md bg-blue-100 text-black dark:bg-blue-900 dark:text-white p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 mt-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* //! hidden form as the netlify cloud functions are slow */}
             <form
               onSubmit={handleOnSubmit}
-              className="hidden form rounded-lg bg-white text-gray-600 dark:bg-blue-900 dark:text-white  p-4 flex flex-col"
+              className="form rounded-lg bg-white text-gray-600 dark:bg-blue-900 dark:text-white  p-4 flex flex-col"
             >
               <label htmlFor="name" className="text-sm mx-4">
                 Your Name
