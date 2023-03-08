@@ -19,6 +19,14 @@ export default function Resume() {
     };
   }, []);
 
+  function responsivePDFWidth() {
+    let customWidth = windowSize.width - windowSize.width / 5;
+    if (windowSize.width > 1400) {
+      customWidth = customWidth - customWidth / 3;
+    }
+    return customWidth;
+  }
+
   return (
     // ! use lg breakpoint as mobile view layout overflows with justify-center
     <ContainerBlock>
@@ -47,11 +55,7 @@ export default function Resume() {
       </div>
       <div className="overflow-auto flex justify-center min-h-screen">
         <PDFViewer
-          width={
-            windowSize.width > 500
-              ? windowSize.width - windowSize.width / 5
-              : windowSize.width
-          }
+          width={responsivePDFWidth()}
           file={userData.resumeDownloadUrl}
         />
       </div>
