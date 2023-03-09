@@ -86,7 +86,7 @@ const userData = {
     site_name: "Rayan Fernandes",
     title: "Rayan Fernandes - Coder. Designer. Freelancer",
     description: `Building things gets me excited. Get in touch with me to know more.`,
-    image: "/profile_pic.png",
+    image: "/profile_round.png",
     type: "website",
   },
   about: {
