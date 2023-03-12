@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import userData from "@constants/data";
 import { FiInstagram, FiTwitter, FiFacebook, FiPhone } from "react-icons/fi";
 import { BsEnvelopeFill, BsPhone, BsPinMapFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
 export default function Contact() {
+  const [isMessageSent, setIsMessageSent] = useState(false);
+
   function handleOnSubmit(e) {
     e.preventDefault();
 
-    const kvpairs = [];
+    const formValues = {};
     const form = e.target;
     for (var i = 0; i < form.elements.length; i++) {
       const e = form.elements[i];
-      kvpairs.push(encodeURIComponent(e.value));
+      formValues[e.name] = e.value;
     }
-    var message = kvpairs.join("  |  ");
+    let message = `
+${formValues.name} wants to contact you, 
+
+Message:
+${formValues.message}
+
+Reply to this email:
+${formValues.email}`;
 
     fetch("/api/contact", {
       method: "POST",
@@ -23,19 +32,15 @@ export default function Contact() {
       .then((res) => res.json())
       .then((data) => {
         console.log(data.reply);
-        alert(data.message);
+        setIsMessageSent(true);
+        // alert(data.message);
       })
       .catch((err) => {
-        alert("Failed to send.");
+        alert("Oops your message was not sent. Please Retry again.");
       });
   }
 
   return (
-    // <IconContext.Provider
-    //   value={{
-    //     className: "text-blue-600 dark:text-blue-500",
-    //   }}
-    // >
     <>
       <section className="w-full">
         <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
@@ -45,42 +50,55 @@ export default function Contact() {
         </div>
         <div className="relative rounded-md shadow-md bg-blue-100 text-black dark:bg-blue-900 dark:text-white p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 mt-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <form
-              onSubmit={handleOnSubmit}
-              className="form rounded-lg bg-white text-gray-600 dark:bg-blue-900 dark:text-white  p-4 flex flex-col"
-            >
-              <label htmlFor="name" className="text-sm mx-4">
-                Your Name
-              </label>
-              <input
-                type="text"
-                className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-                name="name"
-              />
-              <label htmlFor="email" className="text-sm mx-4 mt-4">
-                Email
-              </label>
-              <input
-                type="email"
-                className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-                name="email"
-              />
-              <label htmlFor="message" className="text-sm mx-4 mt-4">
-                Message
-              </label>
-              <textarea
-                rows="4"
-                type="text"
-                className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
-                name="message"
-              ></textarea>
-              <button
-                type="submit"
-                className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+            {isMessageSent ? (
+              <div className="flex flex-col gap-2 rounded-lg bg-white dark:bg-blue-900 justify-center items-center">
+                <BsEnvelopeFill className="" color="#40e3ca" size={"2rem"} />
+                <p className="p-2 rounded">Your message was delivered!</p>
+                <button
+                  className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+                  onClick={() => setIsMessageSent(false)}
+                >
+                  Send Another Message
+                </button>
+              </div>
+            ) : (
+              <form
+                className={`form rounded-lg bg-white text-gray-600 dark:bg-blue-900 dark:text-white  p-4 flex flex-col`}
+                onSubmit={handleOnSubmit}
               >
-                Send Message
-              </button>
-            </form>
+                <label htmlFor="name" className="text-sm mx-4">
+                  Your Name
+                </label>
+                <input
+                  type="text"
+                  className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  name="name"
+                />
+                <label htmlFor="email" className="text-sm mx-4 mt-4">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  name="email"
+                />
+                <label htmlFor="message" className="text-sm mx-4 mt-4">
+                  Message
+                </label>
+                <textarea
+                  rows="4"
+                  type="text"
+                  className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  name="message"
+                ></textarea>
+                <button
+                  type="submit"
+                  className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+                >
+                  Send Message
+                </button>
+              </form>
+            )}
             <div className="md:ml-4">
               <header className="">
                 <h1 className="font-semibold text-2xl">
@@ -128,7 +146,6 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      {/* </IconContext.Provider> */}
     </>
   );
 }

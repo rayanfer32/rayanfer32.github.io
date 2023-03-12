@@ -1,6 +1,7 @@
 import { sendTelegramMessage } from "@utils/helper";
 
 export default (req, res) => {
+  console.log(req.body);
   sendTelegramMessage(req.body)
     .then((r) => {
       res.statusCode = 200;

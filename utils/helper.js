@@ -10,6 +10,15 @@ export function getMyTechStackIcons() {
 }
 
 export function sendTelegramMessage(message) {
-  const url = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage?chat_id=${process.env.TELEGRAM_CHAT_ID}&text=${message}`;
-  return axios.get(url);
+  const url = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}/sendMessage`;
+  const jsonBody = {
+    chat_id: process.env.TELEGRAM_CHAT_ID,
+    // parse_mode: "MarkdownV2",
+    text: message,
+  };
+  return axios({
+    method: "post",
+    url: url,
+    data: jsonBody,
+  });
 }
