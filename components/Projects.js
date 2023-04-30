@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import React from "react";
 import userData from "@constants/data";
 
@@ -14,6 +15,7 @@ export default function Projects() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
           {userData.projects.map((proj, idx) => (
             <ProjectCard
+              key={proj.title}
               title={proj.title}
               link={proj.link}
               imgUrl={proj.imgUrl}
@@ -52,3 +54,13 @@ const ProjectCard = ({ title, link, desc, imgUrl, number }) => {
     </div>
   );
 };
+
+ProjectCard.propTypes = {
+  desc: PropTypes.any,
+  imgUrl: PropTypes.any,
+  link: PropTypes.any,
+  number: PropTypes.shape({
+    length: PropTypes.number
+  }),
+  title: PropTypes.any
+}
