@@ -24,8 +24,8 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="max-w-6l mx-auto px-4 py-10 md:py-10">
-      <div className="flex  md:flex-row justify-between items-center">
+    <div className="max-w-6l mx-auto 2xl:px-60 xl:px-20 py-10 md:py-10">
+      <div className="flex md:flex-row justify-between items-center">
         {/* Logo / Home / Text */}
 
         <div className="flex flex-col">

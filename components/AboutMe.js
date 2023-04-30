@@ -43,7 +43,7 @@ export default function AboutMe() {
                 >
                   mail
                 </a>{" "}
-                and I'll get back. I swear.
+                and I&apos;ll get back. I swear.
               </p>
             </div>
             <div className="mt-8">
@@ -51,14 +51,14 @@ export default function AboutMe() {
                 Job Opportunities
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                I'm looking for a job currently, If you see me as a good fit,
-                check my{" "}
+                I&apos;m looking for a job currently, If you see me as a good
+                fit, check my{" "}
                 <Link href={userData.resumeUrl}>
                   <a className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">
                     CV{" "}
                   </a>
                 </Link>
-                and I'd love to work for you.
+                and I&apos;d love to work for you.
               </p>
             </div>
             {/* Social Links */}
@@ -68,7 +68,10 @@ export default function AboutMe() {
             <div className="mt-4 ml-4">
               {Object.entries(userData.socialLinks).map(
                 ([title, link], index) => (
-                  <div className="flex flex-row justify-start items-center ">
+                  <div
+                    key={index}
+                    className="flex flex-row justify-start items-center "
+                  >
                     <a
                       href={link}
                       className="flex flex-row items-center space-x-4 group"
@@ -95,12 +98,12 @@ export default function AboutMe() {
               </p>
             ))}
 
-            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+            <h1 className="bg-teal-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
-              {getMyTechStackIcons().map((src, idx) => (
-                <img src={src} className="h-20 w-20 mx-4 my-4" />
+              {getMyTechStackIcons().map((src) => (
+                <img key={src} src={src} className="h-20 w-20 mx-4 my-4" />
               ))}
             </div>
           </div>

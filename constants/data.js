@@ -31,6 +31,12 @@ const userData = {
     "flutter",
     "dart",
     "visual-studio-code",
+    "docker",
+    "strapi.io.ico",
+    "canva.com.ico",
+    "pm2.keymetrics.io.ico",
+    "postman.com.ico",
+    "appwrite.io.ico"
   ],
   traits: [
     ["Coder", "#F59E0B"],
@@ -44,6 +50,12 @@ const userData = {
       link: "https://explorer.nexus.io",
       imgUrl: "/nexus_explorer.jpg",
       desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
+    },
+    {
+      title: "Nexus Market Cap",
+      link: "https://marketcap.nexus.io",
+      imgUrl: "/nexus_market_cap.jpg",
+      desc: "Nexus.io Market Cap, built using Next.js and Appwrite",
     },
     {
       title: "Nexus Alerts Bot",
@@ -92,7 +104,7 @@ const userData = {
   about: {
     title: "Then i started coding, now i'm a full-stack developer",
     description: [
-      `I've been exploring and coding since I was 18.`,
+      `I've got a Curiosity bug in my head that keeps me engaged in coding and building.`,
       `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
       `I've been coding in Python, React, Node.js, Express, MySQL, Bootstrap, .NET, C, C++, C#, Java, Assembly language etc to name a few. Although I barely remember the syntax of all the languages now though, I consider myself a Ninja developer.`,
     ],
@@ -105,7 +117,7 @@ const userData = {
       company: "Niveus Solutions",
       year: "2022-2023",
       companyLink: "https://niveussolutions.com",
-      desc: "I really like it here.",
+      desc: "Full stack developer, Working on banking applications.",
     },
     {
       title: "Systems Engineer",

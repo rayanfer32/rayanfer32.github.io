@@ -42,13 +42,13 @@ ${formValues.email}`;
 
   return (
     <>
-      <section className="w-full">
-        <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+      <section className="w-full bg-white dark:bg-gray-800 p-2">
+        <div className="max-w-6xl mx-auto h-48 ">
           <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
             Contact
           </h1>
         </div>
-        <div className="relative rounded-md shadow-md bg-blue-100 text-black dark:bg-blue-900 dark:text-white p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 mt-2">
+        <div className="relative rounded-md shadow-md bg-blue-100 text-black dark:bg-teal-600 dark:text-white p-4 md:p-10 lg:p-20 max-w-6xl mx-auto mb-20 mt-2">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {isMessageSent ? (
               <div className="flex flex-col gap-2 rounded-lg bg-white dark:bg-blue-900 justify-center items-center">
@@ -63,7 +63,7 @@ ${formValues.email}`;
               </div>
             ) : (
               <form
-                className={`form rounded-lg bg-white text-gray-600 dark:bg-blue-900 dark:text-white  p-4 flex flex-col`}
+                className={`form rounded-lg bg-white text-gray-600 dark:bg-teal-900 dark:text-white  p-4 flex flex-col`}
                 onSubmit={handleOnSubmit}
               >
                 <label htmlFor="name" className="text-sm mx-4">
@@ -122,7 +122,7 @@ ${formValues.email}`;
                   <p className="font-light text-sm">{userData.address}</p>
                 </div>
               </div>
-              <div className="social-icons flex flex-row justify-around dark:bg-blue-900 shadow-md rounded-full space-x-8">
+              <div className="bg-white social-icons flex flex-row justify-around dark:bg-teal-900 shadow-md rounded-full space-x-8">
                 <a
                   href={userData.socialLinks.facebook}
                   className="h-10 w-10 rounded-full hover:bg-blue-400  flex items-center justify-center cursor-pointer"
