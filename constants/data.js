@@ -63,8 +63,20 @@ const userData = {
     {
       title: "Nexus Explorer",
       link: "https://explorer.nexus.io",
-      imgUrl: "/nexus_explorer.jpg",
+      imgUrl: "/nexus-explorer.png",
       desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
+    },
+    {
+      title: "Dev Threads Website",
+      link: "https://dev-threads-app.vercel.app",
+      imgUrl: "/dev-threads-app.png",
+      desc: "Threads like Social media platform for all the developers.",
+    },
+    {
+      title: "PrestinePeaks Website",
+      link: "https://enem-next-app.vercel.app",
+      imgUrl: "/prestine_peaks.png",
+      desc: "A website for Prestine Peaks cleaning company.",
     },
     {
       title: "Nexus Market Cap",
@@ -188,6 +200,7 @@ const userData = {
     linkedin: "https://linkedin.com/in/rayanfer",
     github: "https://github.com/rayanfer32",
     facebook: "https://facebook.com",
+    medium: "https://rayanfer32.medium.com/"
   },
 };
 

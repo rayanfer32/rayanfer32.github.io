@@ -1,11 +1,20 @@
 import React from "react";
 import ContainerBlock from "../components/ContainerBlock";
 import Blog from "../components/molecules/Blog/Blog";
+import parse from "rss-to-json";
 
-export default function about() {
+export async function getServerSideProps() {
+  const posts = await parse(`https://medium.com/feed/@rayanfer32`);
+  console.log(posts);
+  return {
+    props: { posts: JSON.parse(JSON.stringify(posts)) },
+  };
+}
+
+export default function about(props) {
   return (
     <ContainerBlock>
-      <Blog />
+      <Blog posts={props.posts} />
     </ContainerBlock>
   );
 }

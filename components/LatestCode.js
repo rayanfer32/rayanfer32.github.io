@@ -54,7 +54,7 @@ export default function LatestCode({ repositories }) {
 
 const GithubRepoCard = ({ latestRepo }) => {
   return (
-    <div className="github-repo border-2 border-emerald-200 rounded p-2 shadow-emerald-400 shadow-md">
+    <div className="github-repo border border-slate-500 rounded p-2 shadow-gray-200 shadow-md">
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
         {latestRepo.name}
       </h1>
