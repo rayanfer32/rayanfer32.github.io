@@ -82,7 +82,7 @@ function ArticleCard({ data }) {
       className="border-2 border-gray-500 p-4 shadow-lg rounded bg-slate-50 overflow-hidden max-h-96 flex flex-col gap-4 "
     >
       <>
-        <a href={data.link} target="_blank" className="text-3xl">{data.title}</a>
+        <a href={data.link} target="_blank" rel="noreferrer noopener" className="text-3xl">{data.title}</a>
         <div className="flex gap-2">
           {data.category.map((c) => (
             <div
