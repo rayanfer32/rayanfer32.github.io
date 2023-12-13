@@ -12,14 +12,14 @@ export default function Hero() {
         <RoughNotationGroup show={true}>
           {userData.traits.map(([trait, color], index) => (
             <RainbowHighlight key={trait} color={color}>
-              <h1 className="p-2 text-2xl md:text-8xl font-bold text-gray-700 dark:text-gray-200 my-2">
+              <h1 className="p-2 text-2xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
                 <HackedTextEffect text={trait} />
               </h1>
             </RainbowHighlight>
           ))}
         </RoughNotationGroup>
       </div>
-      <img src={userData.avatarUrl} alt="avatar" className="lg:h-60 h-32" />
+      <img src={userData.avatarUrl} alt="avatar" className="lg:h-60 h-32 rounded-full transition-all duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
     </div>
   );
 }

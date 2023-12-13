@@ -3,7 +3,7 @@ const userData = {
   name: "Rayan Fernandes",
   description: "Developer, Designer, and Freelancer",
   designation: "React Full-Stack Developer",
-  avatarUrl: "/profile_round.png",
+  avatarUrl: "/pfp2.jpg",
   email: "rayanfernandes9@gmail.com",
   phone: "+91 8722277308",
   address: "Mangalore, Karnataka, India.",

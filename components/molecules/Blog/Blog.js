@@ -39,7 +39,7 @@ export default function Blog({ posts }) {
 
   return (
     <div>
-      <div className="grid md:grid-cols-4 overflow-auto p-4 gap-8 mx-8">
+      <div className="grid md:grid-cols-4 overflow-auto p-4 gap-8 mx-8 max-md:p-1 max-md:mx-2 ">
         {posts?.items?.map((post) => (
           <ArticleCard key={post.id} data={post}></ArticleCard>
         ))}
@@ -79,10 +79,10 @@ export default function Blog({ posts }) {
 function ArticleCard({ data }) {
   return (
     <div
-      className="border-2 border-gray-500 p-4 shadow-lg rounded bg-slate-50 overflow-hidden max-h-96 flex flex-col gap-4 "
+      className="border-2 border-gray-100/10 p-4 shadow-lg rounded bg-slate-50 overflow-hidden max-h-96 flex flex-col gap-4 dark:bg-slate-900 "
     >
       <>
-        <a href={data.link} target="_blank" rel="noreferrer noopener" className="text-3xl">{data.title}</a>
+        <a href={data.link} target="_blank" rel="noreferrer noopener" className="text-3xl max-md:text-xl">{data.title}</a>
         <div className="flex gap-2">
           {data.category.map((c) => (
             <div
