@@ -5,7 +5,6 @@ import parse from "rss-to-json";
 
 export async function getServerSideProps() {
   const posts = await parse(`https://medium.com/feed/@rayanfer32`);
-  console.log(posts);
   return {
     props: { posts: JSON.parse(JSON.stringify(posts)) },
   };
