@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="flex flex-col md:flex-row justify-between items-center">
         {/* Logo / Home / Text */}
 
-        <div className="flex flex-col">
+        <div className="flex flex-col rythm-high">
           <Link href="/">
             <h1 className="font-semibold text-xl dark:text-gray-100">
               {userData.name}
@@ -45,7 +45,7 @@ export default function Navbar() {
             <Link
               key={title}
               href={path}
-              className={`text-base ${
+              className={`text-base rythm-bass ${
                 router.asPath === path
                   ? "text-gray-800 font-bold dark:text-gray-400"
                   : "text-gray-600 dark:text-gray-300 font-normal "

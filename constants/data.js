@@ -140,6 +140,13 @@ const userData = {
   },
   experience: [
     {
+      title: "Software Developer",
+      company: "EG.DK",
+      year: "2023",
+      companyLink: "https://eg.no/",
+      desc: "Working on Norway's largest healthcare solution.",
+    },
+    {
       title: "Cloud Associate",
       company: "Niveus Solutions",
       year: "2022-2023",

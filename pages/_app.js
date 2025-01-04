@@ -2,13 +2,43 @@ import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
+import { AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
+import { motion } from "framer-motion";
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  in: {
+    opacity: 1,
+    y: 0,
+  },
+  out: {
+    opacity: 0,
+    y: -100,
+  },
+};
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
   return (
     <>
       <GoogleAnalytics />
       <ThemeProvider defaultTheme="light" attribute="class">
-        <Component {...pageProps} />
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={router.asPath}
+            initial="initial"
+            animate="in"
+            exit="out"
+            variants={pageVariants}
+            transition={{ duration: 0.5 }}
+          >
+            <Component key={router.asPath} {...pageProps} />
+          </motion.div>
+        </AnimatePresence>
       </ThemeProvider>
       <Analytics />
     </>
