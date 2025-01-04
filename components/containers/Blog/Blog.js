@@ -78,26 +78,33 @@ export default function Blog({ posts }) {
 
 function ArticleCard({ data }) {
   return (
-    <div
-      className="border-2 border-gray-100/10 p-4 shadow-lg rounded bg-slate-50 overflow-hidden max-h-96 flex flex-col gap-4 dark:bg-slate-900 "
-    >
-      <>
-        <a href={data.link} target="_blank" rel="noreferrer noopener" className="text-3xl max-md:text-xl">{data.title}</a>
-        <div className="flex gap-2">
-          {data.category.map((c) => (
-            <div
-              key={c}
-              className="bg-gray-800 px-4 p-2 text-sm rounded-full text-white w-fit h-fit whitespace-nowrap"
-            >
-              {c}
-            </div>
-          ))}
-        </div>
-        <p
-          className="text-md"
-          dangerouslySetInnerHTML={{ __html: data.content }}
-        ></p>
-      </>
-    </div>
+    <>
+      <div className="p-4 shadow-xl rounded-2xl bg-slate-100 overflow-hidden max-h-96 flex flex-col gap-4 dark:bg-gray-900 ">
+        <>
+          <a
+            href={data.link}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="text-2xl max-md:text-lg"
+          >
+            {data.title}
+          </a>
+          <div id="tags" className="flex gap-2">
+            {data.category.map((c) => (
+              <div
+                key={c}
+                className="bg-gray-800 px-4 p-2 text-sm rounded-full text-white w-fit h-fit whitespace-nowrap"
+              >
+                {c}
+              </div>
+            ))}
+          </div>
+          <p
+            className="text-md "
+            dangerouslySetInnerHTML={{ __html: data.content }}
+          ></p>
+        </>
+      </div>
+    </>
   );
 }

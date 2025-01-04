@@ -6,7 +6,7 @@ function getTopicIcon(item) {
 }
 
 function getFaviconIcon(item) {
-  return `https://www.google.com/s2/favicons?sz=64&domain=${item}`;
+  return `https://www.google.com/s2/favicons?sz=256&domain=${item}`;
 }
 
 export function getMyTechStackIcons() {

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import { RainbowHighlight } from "./RainbowHighlight";
 import userData from "@constants/data";
-import HackedTextEffect from "./molecules/HackedTextEffect";
+import HackedTextEffect from "./containers/HackedTextEffect";
 import Rythm from "rythm.js";
 
 export default function Hero() {

@@ -2,6 +2,7 @@ import React from "react";
 import userData from "@constants/data";
 import { getMyTechStackIcons } from "@utils/helper";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function AboutMe() {
   return (
@@ -53,8 +54,11 @@ export default function AboutMe() {
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
                 I&apos;m looking for a job currently, If you see me as a good
                 fit, check my{" "}
-                <Link href={userData.resumeUrl} className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300">
-                    CV{" "}
+                <Link
+                  href={userData.resumeUrl}
+                  className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
+                >
+                  CV{" "}
                 </Link>
                 and I&apos;d love to work for you.
               </p>
@@ -101,7 +105,13 @@ export default function AboutMe() {
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
               {getMyTechStackIcons().map((src) => (
-                <img key={src} src={src} className="h-20 w-20 mx-4 my-4" />
+                <Image
+                  width={256}
+                  height={256}
+                  key={src}
+                  src={src}
+                  className="h-20 w-20 mx-4 my-4"
+                />
               ))}
             </div>
           </div>

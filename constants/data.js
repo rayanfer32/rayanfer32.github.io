@@ -50,8 +50,11 @@ const userData = {
     "https://github.com/get-icon/geticon/raw/master/icons/bootstrap.svg",
     "canva.com.ico",
     "postman.com.ico",
-    "appwrite.io.ico",
-
+    "supabase.com.ico",
+    "v0.dev.ico",
+    "ui.shadcn.com.ico",
+    "ollama.com.ico",
+    "framer.com.ico"
   ],
   traits: [
     ["Coder", "#F59E0B"],

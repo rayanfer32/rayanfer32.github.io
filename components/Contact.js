@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import userData from "@constants/data";
-import { FiInstagram, FiTwitter, FiFacebook, FiPhone } from "react-icons/fi";
+import { FiInstagram, FiTwitter, FiFacebook, FiPhone, FiX } from "react-icons/fi";
 import { BsEnvelopeFill, BsPhone, BsPinMapFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
 

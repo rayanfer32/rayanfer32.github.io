@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import ContainerBlock from "./ContainerBlock";
 import userData from "@constants/data";
 
-const PDFViewer = dynamic(() => import("./molecules/PDFViewer"), {
+const PDFViewer = dynamic(() => import("./containers/PDFViewer"), {
   ssr: false,
 });
 
