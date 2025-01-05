@@ -145,16 +145,18 @@ const userData = {
     {
       title: "Software Developer",
       company: "EG.DK",
-      year: "2023",
+      year: "2024",
       companyLink: "https://eg.no/",
       desc: "Working on Norway's largest healthcare solution.",
+      icon: 'eg.no'
     },
     {
       title: "Cloud Associate",
       company: "Niveus Solutions",
-      year: "2022-2023",
+      year: "2022-2024",
       companyLink: "https://niveussolutions.com",
       desc: "Full stack developer, Working on banking applications.",
+      icon: 'niveussolutions.com'
     },
     {
       title: "Systems Engineer",
@@ -162,6 +164,7 @@ const userData = {
       year: "2021-2022",
       companyLink: "https://infosys.com",
       desc: "Systems Engineer, dealing with some of the biggest projects in the industry.",
+      icon: 'infosys.com'
     },
     {
       title: "Full Stack Developer",
@@ -169,6 +172,7 @@ const userData = {
       year: "2020-2021",
       companyLink: "https://explorer.nexus.io",
       desc: "Developed The Nexus Explorer using next.js and python, with figma design tool.",
+      icon: 'nexus.io'
     },
     {
       title: "Internship",
@@ -176,6 +180,7 @@ const userData = {
       year: "2020",
       companyLink: "https://fiabilite.com",
       desc: "Worked on Embedded IOT and Applications development.",
+      icon: 'fiabilite.in'
     },
   ],
   education: [
@@ -185,6 +190,7 @@ const userData = {
       year: "2016-2020",
       companyLink: "https://canaraengineering.com",
       desc: "Had a tough time in the electronics and communication engineering department, but I managed to get a 6.7 CGPA.",
+      icon: 'canaraengineering.in'
     },
     {
       title: "Pre-University College",
@@ -192,6 +198,7 @@ const userData = {
       year: "2014 - 2016",
       companyLink: "https://paduapucollege.org",
       desc: "Subjects being Physics, Chemistry, Mathematics, English, Hindi and the most important Computer Science!",
+      icon: 'paduapucollege.org'
     },
     {
       title: "Primary & High School",
@@ -199,6 +206,7 @@ const userData = {
       year: "2004 - 2014",
       companyLink: "https://navachetana.org",
       desc: "Basic schooling everyone makes it through.",
+      companyLink: "navachetana.org",
     },
   ],
   resumeUrl: "/resume",

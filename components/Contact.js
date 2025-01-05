@@ -71,7 +71,7 @@ ${formValues.email}`;
                 </label>
                 <input
                   type="text"
-                  className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  className="font-light rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                   name="name"
                 />
                 <label htmlFor="email" className="text-sm mx-4 mt-4">
@@ -79,7 +79,7 @@ ${formValues.email}`;
                 </label>
                 <input
                   type="email"
-                  className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  className="font-light rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                   name="email"
                 />
                 <label htmlFor="message" className="text-sm mx-4 mt-4">
@@ -88,7 +88,7 @@ ${formValues.email}`;
                 <textarea
                   rows="4"
                   type="text"
-                  className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  className="font-light rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                   name="message"
                 ></textarea>
                 <button

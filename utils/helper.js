@@ -1,11 +1,11 @@
 import userData from "@constants/data";
 import axios from "axios";
 
-function getTopicIcon(item) {
+export function getTopicIcon(item) {
   return `https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/${item}/${item}.png`;
 }
 
-function getFaviconIcon(item) {
+export function getFaviconIcon(item) {
   return `https://www.google.com/s2/favicons?sz=256&domain=${item}`;
 }
 
