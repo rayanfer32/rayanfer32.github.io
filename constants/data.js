@@ -54,7 +54,7 @@ const userData = {
     "v0.dev.ico",
     "ui.shadcn.com.ico",
     "ollama.com.ico",
-    "framer.com.ico"
+    "framer.com.ico",
   ],
   traits: [
     ["Coder", "#F59E0B"],
@@ -70,6 +70,12 @@ const userData = {
       desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
     },
     {
+      title: "moviebooking.in",
+      link: "https://moviebooking.in",
+      imgUrl: "/moviebooking.png",
+      desc: "A movie booking website built using Next.js and Supabase.",
+    },
+    {
       title: "Dev Threads Website",
       link: "https://dev-threads-app.vercel.app",
       imgUrl: "/dev-threads-app.png",
@@ -82,12 +88,6 @@ const userData = {
       desc: "A website for Prestine Peaks cleaning company.",
     },
     {
-      title: "Nexus Market Cap",
-      link: "https://marketcap.nexus.io",
-      imgUrl: "/nexus_market_cap.jpg",
-      desc: "Nexus.io Market Cap, built using Next.js and Appwrite",
-    },
-    {
       title: "Nexus Alerts Bot",
       link: "https://t.me/nexusalerts",
       imgUrl: "/nexus-alerts.jpg",
@@ -98,6 +98,12 @@ const userData = {
       link: "https://t.me/demuxxbot",
       imgUrl: "/demuxx.jpg",
       desc: "A Telegram bot for audio source seperation the using spleeter lib.",
+    },
+    {
+      title: "Nexus Market Cap",
+      link: "https://marketcap.nexus.io",
+      imgUrl: "/nexus_market_cap.jpg",
+      desc: "Nexus.io Market Cap, built using Next.js and Appwrite",
     },
     {
       title: "DoodStream Bot",
@@ -148,7 +154,7 @@ const userData = {
       year: "2024",
       companyLink: "https://eg.no/",
       desc: "Working on Norway's largest healthcare solution.",
-      icon: 'eg.no'
+      icon: "eg.no",
     },
     {
       title: "Cloud Associate",
@@ -156,7 +162,7 @@ const userData = {
       year: "2022-2024",
       companyLink: "https://niveussolutions.com",
       desc: "Full stack developer, Working on banking applications.",
-      icon: 'niveussolutions.com'
+      icon: "niveussolutions.com",
     },
     {
       title: "Systems Engineer",
@@ -164,7 +170,7 @@ const userData = {
       year: "2021-2022",
       companyLink: "https://infosys.com",
       desc: "Systems Engineer, dealing with some of the biggest projects in the industry.",
-      icon: 'infosys.com'
+      icon: "infosys.com",
     },
     {
       title: "Full Stack Developer",
@@ -172,7 +178,7 @@ const userData = {
       year: "2020-2021",
       companyLink: "https://explorer.nexus.io",
       desc: "Developed The Nexus Explorer using next.js and python, with figma design tool.",
-      icon: 'nexus.io'
+      icon: "nexus.io",
     },
     {
       title: "Internship",
@@ -180,7 +186,7 @@ const userData = {
       year: "2020",
       companyLink: "https://fiabilite.com",
       desc: "Worked on Embedded IOT and Applications development.",
-      icon: 'fiabilite.in'
+      icon: "fiabilite.in",
     },
   ],
   education: [
@@ -190,7 +196,7 @@ const userData = {
       year: "2016-2020",
       companyLink: "https://canaraengineering.com",
       desc: "Had a tough time in the electronics and communication engineering department, but I managed to get a 6.7 CGPA.",
-      icon: 'canaraengineering.in'
+      icon: "canaraengineering.in",
     },
     {
       title: "Pre-University College",
@@ -198,7 +204,7 @@ const userData = {
       year: "2014 - 2016",
       companyLink: "https://paduapucollege.org",
       desc: "Subjects being Physics, Chemistry, Mathematics, English, Hindi and the most important Computer Science!",
-      icon: 'paduapucollege.org'
+      icon: "paduapucollege.org",
     },
     {
       title: "Primary & High School",
@@ -218,7 +224,7 @@ const userData = {
     linkedin: "https://linkedin.com/in/rayanfer",
     github: "https://github.com/rayanfer32",
     facebook: "https://facebook.com",
-    medium: "https://rayanfer32.medium.com/"
+    medium: "https://rayanfer32.medium.com/",
   },
 };
 
