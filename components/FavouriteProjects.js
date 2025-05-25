@@ -39,8 +39,9 @@ export default function FavouriteProjects() {
             return (
               <a
                 key={project.title}
-                href={project.link}
                 className="w-full block col-span-3 shadow-2xl"
+                href={project.link}
+                target="_blank"
               >
                 <h1 className="text-gray-100 text-xl bg-zinc-800 p-4">
                   {project.title}
@@ -52,7 +53,7 @@ export default function FavouriteProjects() {
                     className="transform hover:scale-125 transition duration-2000 ease-out"
                   />
 
-                  <h1 className="absolute backdrop-blur-sm w-full bg-black/40 bottom-0 lg:text-xl flex lg:h-20 justify-center items-center text-white rounded text-center shadow-md">
+                  <h1 className="absolute backdrop-blur-xs w-full bg-black/40 bottom-0 lg:text-xl flex lg:h-20 justify-center items-center text-white rounded-sm text-center shadow-md">
                     {project.desc}
                   </h1>
                   <h1 className="absolute bottom-6 left-10 text-gray-50 font-bold text-xl">

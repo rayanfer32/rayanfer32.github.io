@@ -53,7 +53,7 @@ ${formValues.email}`;
             {isMessageSent ? (
               <div className="flex flex-col gap-2 rounded-lg bg-white dark:bg-blue-900 justify-center items-center">
                 <BsEnvelopeFill className="" color="#40e3ca" size={"2rem"} />
-                <p className="p-2 rounded">Your message was delivered!</p>
+                <p className="p-2 rounded-sm">Your message was delivered!</p>
                 <button
                   className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
                   onClick={() => setIsMessageSent(false)}
@@ -71,7 +71,7 @@ ${formValues.email}`;
                 </label>
                 <input
                   type="text"
-                  className="font-light rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  className="font-light rounded-md focus:outline-hidden py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                   name="name"
                 />
                 <label htmlFor="email" className="text-sm mx-4 mt-4">
@@ -79,7 +79,7 @@ ${formValues.email}`;
                 </label>
                 <input
                   type="email"
-                  className="font-light rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  className="font-light rounded-md focus:outline-hidden py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                   name="email"
                 />
                 <label htmlFor="message" className="text-sm mx-4 mt-4">
@@ -88,7 +88,7 @@ ${formValues.email}`;
                 <textarea
                   rows="4"
                   type="text"
-                  className="font-light rounded-md focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
+                  className="font-light rounded-md focus:outline-hidden py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                   name="message"
                 ></textarea>
                 <button

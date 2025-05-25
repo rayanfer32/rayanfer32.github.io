@@ -21,7 +21,7 @@ export default function Hero() {
   return (
     <>
       <button
-        className="hidden flex justify-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+        className="hidden flex justify-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-sm"
         onClick={() => rythm.start()}
       >
         Make it Dance!
@@ -32,9 +32,9 @@ export default function Hero() {
           <RoughNotationGroup show={true}>
             {userData.traits.map(([trait, color], index) => (
               <RainbowHighlight key={trait} color={color}>
-                <h1 className="rythm-medium p-2 text-2xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
+                <div className="rythm-medium p-2 text-2xl md:text-7xl font-bold text-gray-700 dark:text-gray-200 my-2">
                   <HackedTextEffect text={trait} />
-                </h1>
+                </div>
               </RainbowHighlight>
             ))}
           </RoughNotationGroup>

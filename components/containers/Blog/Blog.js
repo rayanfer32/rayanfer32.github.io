@@ -77,14 +77,14 @@ function ArticleCard({ data }) {
 function ArticleCardSkeleton() {
   return (
     <div class="p-4 shadow-xl rounded-2xl bg-slate-100 overflow-hidden max-h-96 flex flex-col gap-4 dark:bg-gray-900 animate-pulse">
-      <div class="h-6 bg-gray-200 rounded w-3/4 mb-4"></div>
+      <div class="h-6 bg-gray-200 rounded-sm w-3/4 mb-4"></div>
       <div id="tags" class="flex gap-2">
         <div class="bg-gray-200 px-4 p-2 rounded-full w-16 h-6"></div>
         <div class="bg-gray-200 px-4 p-2 rounded-full w-16 h-6"></div>
       </div>
-      <div class="h-4 bg-gray-200 rounded w-full mt-2"></div>
-      <div class="h-4 bg-gray-200 rounded w-2/3 mt-2"></div>
-      <div class="h-4 bg-gray-200 rounded w-1/2 mt-2"></div>
+      <div class="h-4 bg-gray-200 rounded-sm w-full mt-2"></div>
+      <div class="h-4 bg-gray-200 rounded-sm w-2/3 mt-2"></div>
+      <div class="h-4 bg-gray-200 rounded-sm w-1/2 mt-2"></div>
     </div>
   );
 }

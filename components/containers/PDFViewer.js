@@ -44,7 +44,7 @@ export default function PDFViewer({ file, width, height }) {
 
 function LoadingAnim() {
   return (
-    <button type="button" class="flex justify-center items-center gap-4 rounded" disabled>
+    <button type="button" class="flex justify-center items-center gap-4 rounded-sm" disabled>
         <ImSpinner2 className="animate-spin" size={52}/>
         Just a sec...
     </button>
