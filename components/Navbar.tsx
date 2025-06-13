@@ -164,6 +164,7 @@ function NavLinks() {
           >
             {navbarLinks.map(({ title, path }) => (
               <li
+                key={title}
                 className="py-2 px-4 hover:bg-gray-200 dark:hover:bg-gray-700"
                 onClick={() => router.push(path)}
               >

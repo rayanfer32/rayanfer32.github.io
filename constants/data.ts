@@ -212,7 +212,6 @@ const userData = {
       year: "2004 - 2014",
       companyLink: "https://navachetana.org",
       desc: "Basic schooling everyone makes it through.",
-      companyLink: "navachetana.org",
     },
   ],
   resumeUrl: "/resume",

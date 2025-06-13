@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import userData from "@constants/data";
-import { FiInstagram, FiTwitter, FiFacebook, FiPhone, FiX } from "react-icons/fi";
+import {
+  FiInstagram,
+  FiTwitter,
+  FiFacebook,
+  FiPhone,
+  FiX,
+} from "react-icons/fi";
 import { BsEnvelopeFill, BsPhone, BsPinMapFill } from "react-icons/bs";
 import { IconContext } from "react-icons";
 
@@ -10,7 +16,11 @@ export default function Contact() {
   function handleOnSubmit(e) {
     e.preventDefault();
 
-    const formValues = {};
+    const formValues: {
+      name?: string;
+      email?: string;
+      message?: string;
+    } = {};
     const form = e.target;
     for (var i = 0; i < form.elements.length; i++) {
       const e = form.elements[i];
@@ -86,8 +96,7 @@ ${formValues.email}`;
                   Message
                 </label>
                 <textarea
-                  rows="4"
-                  type="text"
+                  rows={4}
                   className="font-light rounded-md focus:outline-hidden py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
                   name="message"
                 ></textarea>

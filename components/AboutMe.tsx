@@ -106,6 +106,7 @@ export default function AboutMe() {
             <div className="flex flex-row flex-wrap mt-8">
               {getMyTechStackIcons().map((src) => (
                 <Image
+                  alt={src}
                   width={256}
                   height={256}
                   key={src}

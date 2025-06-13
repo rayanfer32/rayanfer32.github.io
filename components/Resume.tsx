@@ -40,7 +40,7 @@ export default function Resume() {
             width="16"
             height="16"
             fill="currentColor"
-            class="bi bi-arrow-up-right-square"
+            className="bi bi-arrow-up-right-square"
             stroke="4"
             stroke-width="4"
             viewBox="0 0 16 16"
@@ -55,6 +55,7 @@ export default function Resume() {
       </div>
       <div className="overflow-auto flex justify-center min-h-screen">
         <PDFViewer
+          height={windowSize.height - 100}
           width={responsivePDFWidth()}
           file={userData.resumeDownloadUrl}
         />

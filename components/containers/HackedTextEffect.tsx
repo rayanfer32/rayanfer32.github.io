@@ -31,7 +31,7 @@ const textEffectOnMouseOver = (refEl, interval) => {
 
 function HackedTextEffect({ text }) {
   let interval = null;
-  const textRef = useRef();
+  const textRef = useRef(null);
 
   function handleMouseOver() {
     return textEffectOnMouseOver(textRef, interval);
@@ -43,7 +43,7 @@ function HackedTextEffect({ text }) {
   }, []);
 
   return (
-    <h1 ref={textRef} data-value={text} style={{width: text.length * 38}}>
+    <h1 ref={textRef} data-value={text} style={{ width: text.length * 38 }}>
       {text}
     </h1>
   );

@@ -12,7 +12,11 @@ export default function Hero() {
     rythm = new Rythm();
     rythm.setMusic("/EPO_Assasin.mp3");
     rythm.setGain(0.2);
-    rythm.addRythm('rythm-high', 'shake', 500, 100, { direction:'left', min: 20, max: 300 })
+    rythm.addRythm("rythm-high", "shake", 500, 100, {
+      direction: "left",
+      min: 20,
+      max: 300,
+    });
     return () => {
       rythm = null;
     };
@@ -20,12 +24,14 @@ export default function Hero() {
 
   return (
     <>
-      <button
-        className="hidden flex justify-center bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-sm"
-        onClick={() => rythm.start()}
-      >
-        Make it Dance!
-      </button>
+      <div className="flex justify-center">
+        <button
+          className="flex justify-center items-center text-white py-2 px-4 rounded-sm border-2 border-gray-700 hover:bg-gray-700 hover:text-white transition-colors duration-300 mt-4 mb-8 rythm-medium"
+          onClick={() => rythm.start()}
+        >
+          Make it Dance!
+        </button>
+      </div>
       <div className="flex flex-row justify-around overflow-hidden lg:p-20">
         {/* Text container */}
         <div className="grid grid-cols-2 gap-4">
