@@ -1,10 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import { remark } from "remark";
-import remarkRehype from "remark-rehype";
-import rehypeStringify from "rehype-stringify";
-import rehypePrism from "rehype-prism-plus";
+
 
 const blogsDirectory = path.join(process.cwd(), "blogs");
 
