@@ -37,8 +37,6 @@ const userData = {
     "eslint",
     "https://github.com/get-icon/geticon/raw/master/icons/jest.svg",
     "https://github.com/get-icon/geticon/raw/master/icons/pm2.svg",
-    "flutter",
-    "dart",
     "https://github.com/get-icon/geticon/raw/master/icons/figma.svg",
     "visual-studio-code",
     "docker",
