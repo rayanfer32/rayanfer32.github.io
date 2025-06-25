@@ -103,7 +103,7 @@ export default function AboutMe() {
             <h1 className="bg-teal-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
             </h1>
-            <div className="flex flex-row flex-wrap mt-8">
+            <div className="flex flex-row flex-wrap mt-8 hover:scale-110 transition-all duration-1000 ease-initial">
               {getMyTechStackIcons().map((src) => (
                 <Image
                   alt={src}
@@ -111,7 +111,7 @@ export default function AboutMe() {
                   height={256}
                   key={src}
                   src={src}
-                  className="h-20 w-20 mx-4 my-4"
+                  className="h-20 w-20 mx-4 my-4 hover:scale-110 transition-all duration-300 ease-in-out hover:animate-bounce  "
                 />
               ))}
             </div>

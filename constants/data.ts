@@ -23,8 +23,6 @@ const userData = {
     "nodejs",
     "git",
     "linux",
-    "kotlin",
-    "https://github.com/get-icon/geticon/raw/master/icons/java.svg",
     "firebase",
     "telegram",
     "raspberry-pi",
@@ -140,7 +138,7 @@ const userData = {
     description: [
       `I've got a Curiosity bug in my head that keeps me engaged in coding and building.`,
       `After learning HTML and struggling with CSS, I came up with a brilliant idea of using bootstrap so that I don't have to style everything by myself and - for obvious reasons - if you knew bootstrap, you were cool.`,
-      `I've been coding in Python, React, Node.js, Express, MySQL, Bootstrap, .NET, C, C++, C#, Java, Assembly language etc to name a few. Although I barely remember the syntax of all the languages now though, I consider myself a Ninja developer.`,
+      `I've been coding in Python, React, Node.js, Express, MySQL, Bootstrap, C, C++, Assembly language etc to name a few. Although I barely remember the syntax of all the languages now though, I consider myself a Ninja developer.`,
     ],
     currentProject: "Nexus Market Cap",
     currentProjectUrl: "https://nexus-market-cap.vercel.app/",

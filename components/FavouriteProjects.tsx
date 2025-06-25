@@ -12,7 +12,7 @@ export default function FavouriteProjects() {
           </h1>
           <Link
             href="/projects"
-            className="mb-20 md:mb-0 px-8 py-4 rounded-md bg-white shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
+            className="mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
