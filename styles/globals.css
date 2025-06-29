@@ -2,9 +2,6 @@
 
 @import './fonts.css' layer(utilities);
 
-@import '../components/containers/Blog/telegram-web.css' layer(utilities);
-@import '../components/containers/Blog/widget-frame.css' layer(utilities);
-
 @config '../tailwind.config.js';
 
 /*
