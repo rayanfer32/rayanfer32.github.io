@@ -27,7 +27,7 @@ export default function BlogIndex({ blogs }: BlogIndexProps) {
               <li key={blog.slug} className="transition hover:scale-[1.02]">
                 <Link href={`/blog/${blog.slug}`}>
                   <div className="cursor-pointer group">
-                    <span className="text-2xl font-bold dark:text-teal-500 group-hover:underline group-hover:text-blue-500 transition">
+                    <span className="sm:text-2xl text-xl text-ellipsis leading-1 tracking-tight font-bold dark:text-teal-500 group-hover:underline group-hover:text-blue-500 transition">
                       {blog.title}
                     </span>
                     <span className="ml-3 text-sm dark:text-slate-200">

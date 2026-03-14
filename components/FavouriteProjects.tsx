@@ -50,7 +50,7 @@ export default function FavouriteProjects() {
                   <img
                     src={project.imgUrl}
                     alt="portfolio"
-                    className="transform hover:scale-125 transition duration-2000 ease-out"
+                    className="transform hover:scale-110 transition duration-2000 ease-out"
                   />
 
                   <h1 className="absolute backdrop-blur-xs w-full bg-black/40 bottom-0 lg:text-xl flex lg:h-20 justify-center items-center text-white rounded-sm text-center shadow-md">

@@ -18,10 +18,10 @@ export default function BlogPost({ frontmatter, content }: BlogProps) {
         <meta name="description" content={frontmatter.description || ""} />
       </Head>
       <div className="lg:w-2/3 max-w-5xl mx-auto bg-gray-700/10 shadow-lg p-8 ">
-        <h1 className="text-4xl font-extrabold mb-2 drop-shadow-sm">
+        <h1 className="text-4xl tracking-tight font-extrabold mb-2 drop-shadow-sm">
           {frontmatter.title}
         </h1>
-        <div className="flex items-center gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row items-center gap-4 mb-8">
           <span className="text-sm text-slate-500">{frontmatter.date}</span>
           {frontmatter.description && (
             <span className="text-slate-400 text-base italic">
@@ -29,7 +29,7 @@ export default function BlogPost({ frontmatter, content }: BlogProps) {
             </span>
           )}
         </div>
-        <article className="prose prose-slate prose-lg max-w-none prose-pre:bg-slate-900 prose-pre:text-white prose-code:font-mono prose-code:text-pink-400 prose-blockquote:border-l-4 prose-blockquote:border-blue-400 prose-blockquote:bg-blue-50 prose-blockquote:p-4 [&>*]:my-8">
+        <article className="prose prose-slate prose-lg max-w-none prose-pre:bg-slate-900 prose-pre:text-white prose-pre:overflow-x-auto prose-pre:whitespace-pre-wrap prose-pre:break-words prose-code:font-mono prose-code:text-pink-400 prose-blockquote:border-l-4 prose-blockquote:border-blue-400 prose-blockquote:bg-blue-50 prose-blockquote:p-4 [&>*]:my-8">
           <ReactMarkdown
             rehypePlugins={[rehypePrism]}
             components={{
@@ -75,6 +75,14 @@ export default function BlogPost({ frontmatter, content }: BlogProps) {
                 </a>
               ),
               hr: () => <hr className="my-8" />,
+              pre: ({ className, children, ...props }) => (
+                <pre
+                  className={`${className || ""} overflow-x-auto whitespace-pre-wrap break-words bg-slate-900 text-white p-4 rounded-lg my-8`}
+                  {...props}
+                >
+                  {children}
+                </pre>
+              ),
               code({ className, children, ...props }) {
                 const isBlock = className && className.startsWith("language-");
                 if (!isBlock) {
@@ -88,7 +96,10 @@ export default function BlogPost({ frontmatter, content }: BlogProps) {
                   );
                 }
                 return (
-                  <code className={className} {...props}>
+                  <code
+                    className={`${className || ""} block overflow-x-auto whitespace-pre-wrap break-words`}
+                    {...props}
+                  >
                     {children}
                   </code>
                 );

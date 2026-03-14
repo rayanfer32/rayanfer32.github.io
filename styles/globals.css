@@ -37,6 +37,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
+pre {
+  overflow-x: auto !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+  max-width: 100% !important;
+}
+
+code {
+  white-space: pre-wrap !important;
+  word-break: break-all !important;
+}
+
 ::-webkit-scrollbar {
   height: 8px;
   width: 8px;
