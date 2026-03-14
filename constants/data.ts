@@ -66,6 +66,12 @@ const userData = {
       desc: "Explorer for the Nexus blockchain, built using Next.js and Python.",
     },
     {
+      title: "Image to svg tracer + converter",
+      link: "https://svg-tracer-app.vercel.app",
+      imgUrl: "/svg-tracer.avif",
+      desc: "Traces the stroke of an image and converts it to svg.",
+    },
+    {
       title: "moviebooking.in",
       link: "https://moviebooking.in",
       imgUrl: "/moviebooking.avif",
@@ -94,12 +100,6 @@ const userData = {
       link: "https://t.me/demuxxbot",
       imgUrl: "/demuxx.avif",
       desc: "A Telegram bot for audio source seperation the using spleeter lib.",
-    },
-    {
-      title: "Nexus Market Cap",
-      link: "https://marketcap.nexus.io",
-      imgUrl: "/nexus_market_cap.avif",
-      desc: "Nexus.io Market Cap, built using Next.js and Appwrite",
     },
     {
       title: "DoodStream Bot",

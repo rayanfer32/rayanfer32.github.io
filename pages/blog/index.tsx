@@ -61,7 +61,7 @@ export const getStaticProps: GetStaticProps = async () => {
     };
   });
   // Sort by date descending
-  blogs.sort((a, b) => (a.date < b.date ? 1 : -1));
+  blogs.sort((a, b) => (a.date > b.date ? 1 : -1));
   return {
     props: {
       blogs,
