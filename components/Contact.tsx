@@ -73,7 +73,7 @@ ${formValues.email}`;
               </div>
             ) : (
               <form
-                className={`form rounded-lg bg-white text-gray-600 dark:bg-slate-800/75 dark:text-white  p-4 flex flex-col`}
+                className={`hidden form rounded-lg bg-white text-gray-600 dark:bg-slate-800/75 dark:text-white  p-4 flex-col`}
                 onSubmit={handleOnSubmit}
               >
                 <label htmlFor="name" className="text-sm mx-4">

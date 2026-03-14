@@ -27,14 +27,14 @@ export default function BlogIndex({ blogs }: BlogIndexProps) {
               <li key={blog.slug} className="transition hover:scale-[1.02]">
                 <Link href={`/blog/${blog.slug}`}>
                   <div className="cursor-pointer group">
-                    <span className="text-2xl font-bold dark:text-blue-200 group-hover:underline group-hover:text-blue-500 transition">
+                    <span className="text-2xl font-bold dark:text-teal-500 group-hover:underline group-hover:text-blue-500 transition">
                       {blog.title}
                     </span>
-                    <span className="ml-3 text-sm text-slate-400">
+                    <span className="ml-3 text-sm dark:text-slate-200">
                       {blog.date}
                     </span>
                     {blog.description && (
-                      <p className="mt-2 text-slate-600 italic">
+                      <p className="mt-2 text-slate-400 italic">
                         {blog.description}
                       </p>
                     )}
