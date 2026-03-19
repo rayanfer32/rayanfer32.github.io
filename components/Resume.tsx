@@ -20,9 +20,9 @@ export default function Resume() {
   }, []);
 
   function responsivePDFWidth() {
-    let customWidth = windowSize.width - windowSize.width / 5;
+    let customWidth = windowSize.width
     if (windowSize.width > 1400) {
-      customWidth = customWidth - customWidth / 3;
+      customWidth = customWidth - customWidth / 2;
     }
     return customWidth;
   }
@@ -30,9 +30,9 @@ export default function Resume() {
   return (
     // ! use lg breakpoint as mobile view layout overflows with justify-center
     <ContainerBlock>
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center sm:mb-8">
         <a
-          className="mb-20 md:mb-0 px-8 py-4 rounded-md dark:bg-gray-700 shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
+          className="mb-6 md:mb-0 px-8 py-4 rounded-md dark:bg-gray-700 shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
           href={userData.resumeDownloadUrl}
         >
           <svg
@@ -53,9 +53,9 @@ export default function Resume() {
           <p>Download PDF</p>
         </a>
       </div>
-      <div className="overflow-auto flex justify-center min-h-screen">
+      <div className="overflow-auto flex justify-center min-h-screen mb-0 sm:mb-8 mx-auto">
         <PDFViewer
-          height={windowSize.height - 100}
+          height={windowSize.height}
           width={responsivePDFWidth()}
           file={userData.resumeDownloadUrl}
         />
