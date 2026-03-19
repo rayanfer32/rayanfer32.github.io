@@ -212,7 +212,7 @@ const userData = {
   ],
   resumeUrl: "/resume",
   resumeDownloadUrl:
-    "https://cdn.jsdelivr.net/gh/rayanfer32/resume@master/resume.pdf",
+    "https://raw.githubusercontent.com/rayanfer32/Resume/master/resume.pdf",
   socialLinks: {
     instagram: "https://instagram.com/rayanfer32_",
     twitter: "https://twitter.com/rayanfernandes9",

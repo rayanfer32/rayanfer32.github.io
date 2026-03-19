@@ -57,7 +57,7 @@ export default function Resume() {
         <PDFViewer
           height={windowSize.height}
           width={responsivePDFWidth()}
-          file={userData.resumeDownloadUrl}
+          file={userData.resumeUrl}
         />
       </div>
     </ContainerBlock>
