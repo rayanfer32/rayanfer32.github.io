@@ -210,7 +210,7 @@ const userData = {
       desc: "Basic schooling everyone makes it through.",
     },
   ],
-  resumeUrl: "/resume",
+  resumeUrl: "https://raw.githubusercontent.com/rayanfer32/Resume/master/resume.pdf",
   resumeDownloadUrl:
     "https://raw.githubusercontent.com/rayanfer32/Resume/master/resume.pdf",
   socialLinks: {

@@ -51,14 +51,14 @@ code {
 }
 
 ::-webkit-scrollbar {
-  height: 8px;
-  width: 8px;
-  background: #554;
+  height: 0.5rem;
+  width: 0.5rem;
+  /* background: rgba(183, 209, 184, 0.089); */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d2d3e4;
-  -webkit-border-radius: 1ex;
+  background: #a5c4e0;
+  -webkit-border-radius: 2ex;
   -webkit-box-shadow: 0px 1px 2px #2223;
 }
 
