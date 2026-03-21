@@ -4,9 +4,16 @@ import { useRouter } from "next/router";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import userData from "@constants/data";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 export default function ContainerBlock({ children, ...customMeta }) {
   const router = useRouter();
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
+  });
 
   const meta: Partial<typeof userData.meta> = {
     ...userData.meta,
@@ -37,9 +44,19 @@ export default function ContainerBlock({ children, ...customMeta }) {
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
       </Head>
+      <motion.div
+        className="fixed top-0 left-0 right-0 h-1.5 bg-blue-500 origin-left z-50 rounded-r-full"
+        style={{ scaleX }}
+      />
       <main className="dark:bg-gray-800 w-full mb-2">
         <Navbar />
-        <div>{children}</div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          {children}
+        </motion.div>
         <Footer />
       </main>
     </div>

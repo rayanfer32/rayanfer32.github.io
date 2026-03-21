@@ -32,7 +32,7 @@ export default function Resume() {
     <ContainerBlock>
       <div className="flex justify-center sm:mb-8">
         <a
-          className="mb-6 md:mb-0 px-8 py-4 rounded-md dark:bg-gray-700 shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
+          className="mb-6 md:mb-0 px-8 py-4 rounded-md bg-white dark:bg-gray-700 shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-white"
           href={userData.resumeDownloadUrl}
         >
           <svg
@@ -53,9 +53,9 @@ export default function Resume() {
           <p>Download PDF</p>
         </a>
       </div>
-      <div className="py-8 flex justify-center min-h-screen mb-2 sm:mb-8 mx-auto overflow-hidden ">
+      <div className="py-8 flex flex-col items-center justify-start min-h-screen mb-2 sm:mb-8 mx-auto overflow-hidden">
         <PDFViewer
-          className="shadow-xl rounded-md"
+          className="shadow-xl rounded-md "
           height={windowSize.height}
           width={responsivePDFWidth()}
           file={userData.resumeUrl}

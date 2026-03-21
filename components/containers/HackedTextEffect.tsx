@@ -43,7 +43,7 @@ function HackedTextEffect({ text }) {
   }, []);
 
   return (
-    <h1 ref={textRef} data-value={text} style={{ width: text.length * 38 }}>
+    <h1 ref={textRef} data-value={text} className="w-auto inline-block">
       {text}
     </h1>
   );

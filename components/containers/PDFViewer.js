@@ -16,7 +16,7 @@ export default function PDFViewer({ file, width, height, className }) {
   }
 
   return (
-    <div className={className}>
+    <div className={`${className} bg-white dark:bg-gray-900 min-h-[500px] flex flex-col items-center justify-center`} style={{ width: width }}>
       <Document
         file={file}
         renderMode="canvas"
@@ -42,9 +42,9 @@ export default function PDFViewer({ file, width, height, className }) {
 
 function LoadingAnim() {
   return (
-    <button type="button" class="flex justify-center items-center gap-4 rounded-sm" disabled>
-      <ImSpinner2 className="animate-spin" size={52} />
-      Just a sec...
-    </button>
+    <div className="flex flex-col justify-center items-center gap-4 p-8 text-gray-500 dark:text-gray-400">
+      <ImSpinner2 className="animate-spin text-blue-500" size={52} />
+      <p className="text-xl font-medium animate-pulse">Just a sec...</p>
+    </div>
   );
 }

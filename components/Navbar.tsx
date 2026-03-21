@@ -10,11 +10,11 @@ import { motion, AnimatePresence } from "framer-motion";
 
 export default function Navbar() {
   return (
-    <div className="max-w-6l px-4 mx-auto 2xl:px-60 xl:px-20 py-10 md:py-10">
-      <div className="flex md:flex-row justify-between items-center">
-        <div className="flex flex-col rythm-high">
+    <div className="max-w-7xl px-4 mx-auto 2xl:px-40 xl:px-20 py-10 md:py-10">
+      <div className="flex flex-row justify-between items-center">
+        <div className="flex flex-col">
           <Link href="/">
-            <h1 className="font-semibold text-xl dark:text-gray-100">
+            <h1 className="font-semibold text-xl dark:text-gray-100 hover:text-blue-500 transition-colors">
               {userData.name}
             </h1>
             <p className="text-base font-light text-gray-500 dark:text-gray-300">
@@ -27,7 +27,9 @@ export default function Navbar() {
           <ThemeToggle />
         </div>
       </div>
-      <SocialButtons />
+      <div className="hidden md:block">
+        <SocialButtons />
+      </div>
     </div>
   );
 }

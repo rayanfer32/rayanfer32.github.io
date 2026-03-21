@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import getLatestRepos from "@lib/getLatestRepos";
 import userData from "@constants/data";
+import { motion } from "framer-motion";
 
 export default function LatestCode({ repositories }) {
   const [repos, setRepos] = useState([]);
@@ -9,17 +10,38 @@ export default function LatestCode({ repositories }) {
   useEffect(() => {
     setRepos(repositories);
   }, []);
+
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center md:pt-40 mx-10">
-          <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center lg:text-left">
+          <motion.h1 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center lg:text-left"
+          >
             Latest Code
-          </h1>
+          </motion.h1>
 
-          <a
+          <motion.a
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             href={`https://github.com/${userData.githubUsername}`}
-            className="mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center dark:text-gray-700"
+            className="mb-20 md:mb-0 px-8 py-4 rounded-md shadow-lg text-xl font-semibold flex flex-row space-x-4 items-center bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -37,28 +59,42 @@ export default function LatestCode({ repositories }) {
               />
             </svg>
             <p>View GitHub</p>
-          </a>
+          </motion.a>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-10">
-        {/* Single github Repo */}
-
+      <motion.div 
+        variants={container}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto px-10 lg:-mt-10 gap-y-10"
+      >
         {repos &&
           repos.map((latestRepo, idx) => (
             <GithubRepoCard latestRepo={latestRepo} key={idx} />
           ))}
-      </div>
+      </motion.div>
     </section>
   );
 }
 
 const GithubRepoCard = ({ latestRepo }) => {
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 },
+  };
+
   return (
-    <div className="github-repo border border-slate-500 rounded-sm p-2 shadow-gray-200 shadow-md">
+    <motion.div 
+      variants={item}
+      whileHover={{ y: -5 }}
+      transition={{ type: "spring", stiffness: 300 }}
+      className="github-repo border border-slate-500 rounded-sm p-4 shadow-gray-200 shadow-md bg-white dark:bg-gray-800"
+    >
       <h1 className="font-semibold text-xl dark:text-gray-200 text-gray-700">
         {latestRepo.name}
       </h1>
-      <p className="text-base my-4 text-gray-500">{latestRepo.description}</p>
+      <p className="text-base my-4 text-gray-500 line-clamp-3">{latestRepo.description}</p>
       <a
         href={latestRepo.clone_url}
         className="font-semibold group flex flex-row space-x-2 w-full items-center"
@@ -68,6 +104,6 @@ const GithubRepoCard = ({ latestRepo }) => {
           &rarr;
         </div>
       </a>
-    </div>
+    </motion.div>
   );
 };
