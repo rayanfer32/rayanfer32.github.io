@@ -53,8 +53,9 @@ export default function Resume() {
           <p>Download PDF</p>
         </a>
       </div>
-      <div className="overflow-auto flex justify-center min-h-screen mb-0 sm:mb-8 mx-auto">
+      <div className="py-8 flex justify-center min-h-screen mb-2 sm:mb-8 mx-auto overflow-hidden ">
         <PDFViewer
+          className="shadow-xl rounded-md"
           height={windowSize.height}
           width={responsivePDFWidth()}
           file={userData.resumeUrl}
