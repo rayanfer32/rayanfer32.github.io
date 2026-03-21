@@ -18,13 +18,13 @@ The backend would send something like:
 
 But of course, instead of just three or four simple conditions, the logic was handed to me in an Excel file with **20+ combinations** like this:
 
-| shipment\_status | location\_type | icon            |
-| ---------------- | -------------- | --------------- |
-| In Transit       | Warehouse      | "truck-loading" |
-| In Transit       | Port           | "cargo-ship"    |
-| Delayed          | Port           | "warning-ship"  |
-| Delivered        | Warehouse      | "check-circle"  |
-| Delayed          | Transit        | "warning-truck" |
+| shipment_status | location_type | icon            |
+| --------------- | ------------- | --------------- |
+| In Transit      | Warehouse     | "truck-loading" |
+| In Transit      | Port          | "cargo-ship"    |
+| Delayed         | Port          | "warning-ship"  |
+| Delivered       | Warehouse     | "check-circle"  |
+| Delayed         | Transit       | "warning-truck" |
 
 At first, I thought of hardcoding the logic like a caveman.
 But my developer instincts said: “Wait, let’s automate this.”
@@ -46,9 +46,10 @@ Now all I had to do was this:
 
 ```js
 function getShipmentIcon(shipmentStatus, locationType) {
-  const rule = ICON_RULES.find(item =>
-    item.shipment_status === shipmentStatus &&
-    item.location_type === locationType
+  const rule = ICON_RULES.find(
+    (item) =>
+      item.shipment_status === shipmentStatus &&
+      item.location_type === locationType,
   );
   return rule?.icon || "default-icon";
 }
@@ -66,7 +67,3 @@ No need to overthink it. Use the language features you already know to turn mess
 
 And yeah—skip ChatGPT once in a while 😉
 Let your brain run wild before you ask the bot.
-
----
-
-Want help turning this into a slick blog post, code snippet, or animated tutorial? Just say the word.
