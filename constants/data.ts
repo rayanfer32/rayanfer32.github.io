@@ -60,6 +60,18 @@ const userData = {
   ],
   projects: [
     {
+      title: "Kamavo",
+      link: "https://kamavo.in",
+      imgUrl: "/kamavo-web.png",
+      desc: "Platform connecting contractors directly with verified construction workers.",
+    },
+    {
+      title: "Deftly",
+      link: "https://deftly.in",
+      imgUrl: "/deftly-web.png",
+      desc: "Doorstep home repairs and maintenance services platform in Mangalore.",
+    },
+    {
       title: "Nexus Explorer",
       link: "https://explorer.nexus.io",
       imgUrl: "/nexus-explorer.avif",
