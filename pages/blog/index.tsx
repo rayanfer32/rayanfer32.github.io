@@ -49,6 +49,14 @@ export default function BlogIndex({ blogs }: BlogIndexProps) {
   );
 }
 
+function parseBlogDate(dateStr: string): number {
+  if (!dateStr) return 0;
+  // Remove ordinal suffixes (e.g. 10th -> 10, 1st -> 1) for valid Date parsing
+  const clean = dateStr.replace(/(\d+)(st|nd|rd|th)/i, "$1");
+  const timestamp = Date.parse(clean);
+  return isNaN(timestamp) ? 0 : timestamp;
+}
+
 export const getStaticProps: GetStaticProps = async () => {
   const slugs = getBlogSlugs();
   const blogs = slugs.map((slug) => {
@@ -60,8 +68,8 @@ export const getStaticProps: GetStaticProps = async () => {
       description: frontmatter.description || "",
     };
   });
-  // Sort by date descending
-  blogs.sort((a, b) => (a.date > b.date ? 1 : -1));
+  // Sort by latest date first (descending)
+  blogs.sort((a, b) => parseBlogDate(b.date) - parseBlogDate(a.date));
   return {
     props: {
       blogs,
