@@ -17,8 +17,8 @@ type BlogIndexProps = {
 export default function BlogIndex({ blogs }: BlogIndexProps) {
   return (
     <ContainerBlock>
-      <div className="py-16 px-4">
-        <div className="max-w-4xl mx-auto bg-gray-100/80 text-zinc-700 dark:bg-zinc-500/10 dark:text-gray-300 rounded-2xl shadow-xl p-8 ">
+      <div className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-5xl lg:max-w-6xl xl:max-w-7xl mx-auto bg-white/85 dark:bg-zinc-900/85 backdrop-blur-xl text-zinc-800 dark:text-zinc-200 rounded-3xl shadow-2xl border border-zinc-200/80 dark:border-zinc-800/80 p-8 sm:p-12">
           <h1 className="text-4xl font-extrabold mb-10 drop-shadow-sm">
             Read my blog
           </h1>

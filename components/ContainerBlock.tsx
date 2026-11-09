@@ -48,16 +48,42 @@ export default function ContainerBlock({ children, ...customMeta }) {
         className="fixed top-0 left-0 right-0 h-1.5 bg-blue-500 origin-left z-50 rounded-r-full"
         style={{ scaleX }}
       />
-      <main className="dark:bg-gray-800 w-full mb-2">
-        <Navbar />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
-          {children}
-        </motion.div>
-        <Footer />
+      <main className="relative min-h-screen w-full bg-slate-50/60 dark:bg-[#090d16] transition-colors">
+        {/* Subtle decorative grid lines across the entire website */}
+        <div
+          aria-hidden="true"
+          className="fixed inset-0 pointer-events-none opacity-[0.035] dark:opacity-[0.045] z-0"
+          style={{
+            backgroundImage: `
+              linear-gradient(to right, currentColor 1px, transparent 1px),
+              linear-gradient(to bottom, currentColor 1px, transparent 1px)
+            `,
+            backgroundSize: "40px 40px",
+          }}
+        />
+
+        {/* Ambient modern gradient glow across the website */}
+        <div
+          aria-hidden="true"
+          className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 pointer-events-none opacity-30 dark:opacity-20 blur-3xl z-0"
+          style={{
+            background: "radial-gradient(ellipse at 50% 0%, rgba(20, 184, 166, 0.35), rgba(99, 102, 241, 0.2), transparent 70%)",
+          }}
+        />
+
+        <div className="relative z-10 flex flex-col min-h-screen justify-between">
+          <div>
+            <Navbar />
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              {children}
+            </motion.div>
+          </div>
+          <Footer />
+        </div>
       </main>
     </div>
   );

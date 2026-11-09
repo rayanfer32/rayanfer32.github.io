@@ -1,8 +1,9 @@
+@import "./fonts.css";
 @import "tailwindcss";
 
-@import "./fonts.css" layer(utilities);
-
 @config '../tailwind.config.js';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 /*
   The default border color has changed to `currentcolor` in Tailwind CSS v4,
@@ -26,7 +27,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Work Sans", monospace;
+  font-family: "Work Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 a {
@@ -39,15 +40,19 @@ a {
 }
 
 pre {
-  overflow-x: auto !important;
-  white-space: pre-wrap !important;
-  word-wrap: break-word !important;
-  max-width: 100% !important;
+  overflow-x: auto;
+  max-width: 100%;
 }
 
-code {
-  white-space: pre-wrap !important;
-  word-break: break-all !important;
+pre code {
+  white-space: pre !important;
+  word-break: normal !important;
+  word-wrap: normal !important;
+}
+
+:not(pre) > code {
+  white-space: normal;
+  word-break: break-word;
 }
 
 ::-webkit-scrollbar {
@@ -64,4 +69,25 @@ code {
 
 ::-webkit-scrollbar-corner {
   background: #444;
+}
+
+/* Ambient Grid Pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+:is(.dark, .dark *) .bg-grid-pattern,
+.dark .bg-grid-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+/* Mask to smoothly fade grid edges */
+.mask-radial-faded {
+  mask-image: radial-gradient(ellipse at 50% 25%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.2) 75%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 25%, rgba(0, 0, 0, 0.9) 30%, rgba(0, 0, 0, 0.2) 75%, transparent 100%);
 }

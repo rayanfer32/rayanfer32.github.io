@@ -3,9 +3,9 @@ import userData from "@constants/data";
 
 export default function Footer() {
   return (
-    <div className="bg-[#F1F1F1] dark:bg-gray-900">
-      <div className="max-w-6xl  mx-auto px-4 py-10 md:py-20">
-        <div className="h-0.5 w-full bg-white dark:bg-gray-700"></div>
+    <div className="bg-slate-100/70 dark:bg-zinc-950/70 backdrop-blur-xs border-t border-zinc-200/80 dark:border-zinc-800/80 transition-colors">
+      <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
+        <div className="h-0.5 w-full bg-zinc-200/80 dark:bg-zinc-800/80"></div>
         <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row justify-between md:items-center mt-8">
           <div>
             <p>&copy; {userData.name}. All Rights Reserved.</p>
