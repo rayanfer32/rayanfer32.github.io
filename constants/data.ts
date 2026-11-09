@@ -60,6 +60,12 @@ const userData = {
   ],
   projects: [
     {
+      title: "Team Room",
+      link: "https://team-room.rayanfer32.workers.dev",
+      imgUrl: "/team-room-demo.jpg",
+      desc: "A webapp that allows creating AI personas to deabte/discuss/interview on a topic.",
+    },
+    {
       title: "Kamavo",
       link: "https://kamavo.in",
       imgUrl: "/kamavo-web.png",

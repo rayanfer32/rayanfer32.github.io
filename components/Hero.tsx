@@ -48,7 +48,7 @@ export default function Hero() {
                     damping: 10,
                     delay: 0.4,
                   }}
-                  className="absolute w-24 sm:w-28 md:w-26 top-[18%] left-[49%] rotate-[6deg] -translate-x-1/2 pointer-events-none drop-shadow-md z-20"
+                  className="absolute w-20 sm:w-24 md:w-26 top-[18%] left-[49%] rotate-[6deg] -translate-x-1/2 pointer-events-none drop-shadow-md z-20"
                 />
 
                 <motion.div
