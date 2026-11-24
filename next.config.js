@@ -1,6 +1,5 @@
 // next.config.js
 module.exports = {
-  distDir: process.env.NODE_ENV === "development" ? ".next/dev" : ".next/build",
   images: {
     remotePatterns: [
       {
