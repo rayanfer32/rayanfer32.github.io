@@ -11,7 +11,7 @@ export function getFaviconIcon(item) {
 
 export function getMyTechStackIcons() {
   return userData.techStack.map((item) => {
-    if (item.includes("https://")) {
+    if (item.startsWith("/") || item.includes("https://")) {
       return item;
     } else if (item.includes(".ico")) {
       return getFaviconIcon(item.split(".ico")[0]);
