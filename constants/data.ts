@@ -153,11 +153,11 @@ const userData = {
   },
   about: {
     title:
-      "Full-stack software engineer building and shipping scalable web, mobile, and cloud solutions",
+      "Full-stack engineer turning 'what if we build this?' into production-ready chaos",
     description: [
-      `I'm a full-stack software engineer with over 5 years of experience turning complex ideas into resilient, production-ready applications. My core expertise centers on React, React Native, and TypeScript across frontend and mobile, paired with scalable Node.js and Python backend services, clean PostgreSQL schema design, and cloud infrastructure.`,
-      `Currently at EG Healthcare (Patientsky), I lead frontend and mobile development for Norway's largest patient healthcare app—powering 500K+ downloads and 10–20K daily active users. My work spans full application rewrites, real-time AI audio transcription workflows with Speechmatics and WebSockets, and cross-platform architecture across iOS, Android, and Web. Previously, I delivered high-stakes enterprise banking portals and fleet management systems at Niveus Solutions and Infosys.`,
-      `Beyond enterprise engineering, I'm an avid builder who loves taking products from zero to one. I've architected platforms like Kamavo (a cross-platform workforce marketplace) and ShowZio (a multi-tenant ticketing engine built with Next.js and Supabase Row Level Security). Whether it's solving tricky mobile edge cases, designing secure multi-tenant architectures, or automating workflows, I thrive on owning systems end-to-end and translating ambiguous requirements into practical solutions.`,
+      `I started coding because I thought HTML and CSS were easy, until I spent 6 hours trying to vertically center a <div>. Out of sheer survival, I discovered Bootstrap, decided anybody using utility classes was basically Tony Stark, and never looked back.`,
+      `Over the last 5+ years, I've got my hands dirty with React, React Native, TypeScript, Node.js, and Postgres across everything from banking portals to Norway's largest patient healthcare app. If an app can crash on an obscure Android device at 3 AM, I'm usually the guy figuring out why a WebSocket closed or why Speechmatics AI transcribed a cough into Swedish.`,
+      `When I'm not untangling production edge cases, I build side projects at irresponsible hours like Kamavo.in (connecting construction contractors with workers) and Showzio.in (a ticketing engine with Supabase RLS so bulletproof even I can't break it). I consider myself a ninja developer: I get in, squash the bug, leave a trail of console.logs, and disappear into the night.`,
     ],
     currentProject: "Kamavo",
     currentProjectUrl: "https://kamavo.in",

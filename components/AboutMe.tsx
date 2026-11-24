@@ -69,7 +69,7 @@ export default function AboutMe() {
   return (
     <section className="bg-white dark:bg-gray-800">
       {/* 1. Header Section */}
-      <div className="max-w-6xl mx-auto py-16 px-4 bg-white dark:bg-gray-800">
+      <div className="max-w-6xl mx-auto py-18 h-42 px-4 bg-white dark:bg-gray-800">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
